@@ -1,0 +1,338 @@
+/* Personal portfolio — dependency-free.
+   Shares its design tokens with the project demo so the two sites feel
+   like one coherent body of work. */
+:root {
+  --bg: #f7f8fc;
+  --card: #ffffff;
+  --ink: #16181f;
+  --muted: #5b6172;
+  --accent: #4f46e5;
+  --accent-2: #0ea5e9;
+  --line: #e4e7f0;
+  --radius: 16px;
+  --shadow: 0 1px 3px rgba(16, 24, 40, 0.08), 0 10px 30px rgba(16, 24, 40, 0.06);
+  --max: 980px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* sticky nav */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 24px;
+  background: rgba(247, 248, 252, 0.85);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-name {
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.nav-links a:hover {
+  color: var(--ink);
+}
+
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* hero */
+.hero {
+  padding: 84px 0 64px;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -40px -60px auto -60px;
+  height: 320px;
+  background: radial-gradient(
+    60% 120% at 20% 0%,
+    rgba(79, 70, 229, 0.12),
+    transparent 60%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 6px 12px;
+  background: rgba(34, 197, 94, 0.12);
+  color: #15803d;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+  animation: pulse 2.2s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  line-height: 1.05;
+  margin: 0 0 14px;
+  letter-spacing: -0.03em;
+}
+.tagline {
+  font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+  font-weight: 600;
+  margin: 0 0 18px;
+  max-width: 640px;
+}
+.intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 0 28px;
+}
+
+/* buttons */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border: 1.5px solid var(--accent);
+  border-radius: 999px;
+  padding: 11px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.05s ease, background 0.2s ease;
+}
+.btn:hover {
+  background: #4338ca;
+  border-color: #4338ca;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--accent);
+}
+.btn-ghost:hover {
+  background: rgba(79, 70, 229, 0.08);
+}
+
+/* sections */
+.section {
+  padding: 56px 0;
+  scroll-margin-top: 80px;
+  border-top: 1px solid var(--line);
+}
+.section-title {
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+}
+
+/* work grid */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+.project {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.project h3 {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+.project-blurb {
+  color: #2b2f3a;
+  margin: 0 0 16px;
+  flex: 1;
+}
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0 0 18px;
+}
+.tags li {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(79, 70, 229, 0.09);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.project-links {
+  display: flex;
+  gap: 18px;
+}
+.project-links a {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.project-links a:hover {
+  text-decoration: underline;
+}
+/* placeholder cards — obviously "fill me in" */
+.project.is-placeholder {
+  border-style: dashed;
+  border-color: #c7cbe0;
+  box-shadow: none;
+  background: #fbfcff;
+}
+.project.is-placeholder h3,
+.project.is-placeholder .project-blurb {
+  color: #8a90a6;
+}
+
+/* about */
+.about-text {
+  font-size: 1.08rem;
+  max-width: 660px;
+  margin: 0 0 16px;
+}
+.skills-title {
+  font-size: 1.05rem;
+  margin: 26px 0 14px;
+}
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+.skills li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* footer */
+.footer {
+  max-width: var(--max);
+  margin: 40px auto 0;
+  padding: 28px 24px 48px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .status-dot {
+    animation: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav {
+    padding: 12px 16px;
+  }
+  .nav-links {
+    gap: 14px;
+  }
+  .hero {
+    padding: 56px 0 48px;
+  }
+}

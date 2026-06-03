@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tyler Forstrom — Software Engineer</title>
+    <meta
+      name="description"
+      content="Tyler Forstrom — software engineer. I build well-tested, reproducible systems, from simulation engines to statistical validation pipelines to clean web frontends."
+    />
+    <!-- Nice link previews when you share the URL (LinkedIn, texts, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tyler Forstrom — Software Engineer" />
+    <meta
+      property="og:description"
+      content="I build well-tested, reproducible systems. See my work."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a id="top"></a>
+
+    <header class="nav">
+      <a class="nav-name" href="#top">Tyler Forstrom</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/TylerJForstrom" target="_blank" rel="noopener">
+          GitHub ↗
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <p class="status"><span class="status-dot"></span> Open to software engineering roles</p>
+        <p class="eyebrow">Software Engineer</p>
+        <h1>Tyler Forstrom</h1>
+        <p class="tagline">
+          I build well-tested systems that are honest about what they can —
+          and can't — do.
+        </p>
+        <p class="intro">
+          From simulation engines and statistical pipelines to clean web
+          frontends, I turn ambiguous problems into systems that are
+          reproducible, well-tested, and clear. I'd rather ship a result I can
+          defend than a demo that overpromises.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="#work">View my work ↓</a>
+          <a
+            class="btn btn-ghost"
+            href="https://github.com/TylerJForstrom"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <!-- TODO: paste your LinkedIn URL -->
+          <a class="btn btn-ghost" href="#">LinkedIn</a>
+          <!-- TODO: drop a resume.pdf in this folder (or remove this button) -->
+          <a class="btn btn-ghost" href="resume.pdf">Résumé (PDF)</a>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" class="section">
+        <h2 class="section-title">Selected work</h2>
+
+        <div class="work-grid">
+          <!-- Flagship project: the market sim we built -->
+          <article class="project reveal">
+            <h3>Agent-Based Market Simulator &amp; Strategy Validation Firewall</h3>
+            <p class="project-blurb">
+              A from-scratch stock market where the price <em>emerges</em> from
+              thousands of interacting trader-agents — paired with a statistical
+              "firewall" that honestly tests whether a trading strategy has real
+              edge. Across eight strategy families it found none (the correct
+              answer for efficient markets); the one signal that survived is
+              volatility forecasting, competitive with industry-standard models.
+              Pure Python, ~350 tests, tamper-evident result logging.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Simulation</li>
+              <li>Applied statistics</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <!-- TODO: replace # with your live demo URL once it's deployed -->
+              <a href="#">Live demo →</a>
+              <a
+                href="https://github.com/TylerJForstrom/Stock-Market-Sim"
+                target="_blank"
+                rel="noopener"
+                >Code →</a
+              >
+            </div>
+          </article>
+
+          <!-- Placeholder — copy this block for each additional project -->
+          <article class="project reveal is-placeholder">
+            <h3>[ Project name ]</h3>
+            <p class="project-blurb">
+              [ One or two sentences: what it does, who it's for, and the single
+              most impressive technical part. ]
+            </p>
+            <ul class="tags">
+              <li>Tech</li>
+              <li>Tech</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">Live demo →</a>
+              <a href="#">Code →</a>
+            </div>
+          </article>
+
+          <article class="project reveal is-placeholder">
+            <h3>[ Project name ]</h3>
+            <p class="project-blurb">
+              [ One or two sentences describing the project and what you built. ]
+            </p>
+            <ul class="tags">
+              <li>Tech</li>
+              <li>Tech</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">Live demo →</a>
+              <a href="#">Code →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2 class="section-title">About</h2>
+        <p class="about-text">
+          [ A sentence or two about you: who you are, where you're at right now
+          (e.g. recent grad, self-taught, studying X), and what kind of role
+          you're looking for. ]
+        </p>
+        <p class="about-text">
+          The throughline in my work is rigor — I build from first principles,
+          test heavily, and care more about whether a result is real than whether
+          it looks impressive.
+        </p>
+        <h3 class="skills-title">Tools I work with</h3>
+        <ul class="skills">
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML &amp; CSS</li>
+          <li>FastAPI</li>
+          <li>Docker</li>
+          <li>Git &amp; CI</li>
+          <li>pytest</li>
+          <li>Applied statistics</li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="about-text">
+          I'm open to software engineering roles and interesting problems. The
+          fastest way to reach me:
+        </p>
+        <div class="cta-row">
+          <!-- TODO: replace with your real email -->
+          <a class="btn" href="mailto:you@example.com">Email me</a>
+          <a
+            class="btn btn-ghost"
+            href="https://github.com/TylerJForstrom"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <!-- TODO: paste your LinkedIn URL -->
+          <a class="btn btn-ghost" href="#">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year">2026</span> Tyler Forstrom · Built from scratch with
+        HTML, CSS &amp; JavaScript — no frameworks.
+      </p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

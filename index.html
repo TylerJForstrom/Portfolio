@@ -219,6 +219,46 @@
       </p>
     </footer>
 
+    <!-- Ask-about-my-projects chatbot -->
+    <button
+      id="chat-toggle"
+      class="chat-toggle"
+      aria-label="Ask about Tyler's projects"
+      aria-expanded="false"
+    >
+      <span class="chat-toggle-icon" aria-hidden="true">💬</span>
+      <span class="chat-toggle-label">Ask about my work</span>
+    </button>
+    <section
+      id="chat-panel"
+      class="chat-panel"
+      role="dialog"
+      aria-label="Ask about Tyler's projects"
+      aria-hidden="true"
+    >
+      <header class="chat-head">
+        <div>
+          <strong>Ask about my work</strong>
+          <span class="chat-sub">Grounded · no made-up info</span>
+        </div>
+        <button id="chat-close" class="chat-close" aria-label="Close chat">✕</button>
+      </header>
+      <div id="chat-log" class="chat-log" aria-live="polite"></div>
+      <div id="chat-chips" class="chat-chips"></div>
+      <form id="chat-form" class="chat-form">
+        <input
+          id="chat-input"
+          class="chat-input"
+          type="text"
+          autocomplete="off"
+          placeholder="Ask about a project, my skills, contact…"
+          aria-label="Type your question"
+        />
+        <button type="submit" class="chat-send" aria-label="Send">→</button>
+      </form>
+    </section>
+
     <script src="script.js" defer></script>
+    <script src="chatbot.js" defer></script>
   </body>
 </html>

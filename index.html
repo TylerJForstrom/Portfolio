@@ -60,8 +60,7 @@
           >
           <!-- TODO: paste your LinkedIn URL -->
           <a class="btn btn-ghost" href="#">LinkedIn</a>
-          <!-- TODO: drop a resume.pdf in this folder (or remove this button) -->
-          <a class="btn btn-ghost" href="resume.pdf">Résumé (PDF)</a>
+          <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
         </div>
       </section>
 
@@ -100,35 +99,28 @@
             </div>
           </article>
 
-          <!-- Placeholder — copy this block for each additional project -->
-          <article class="project reveal is-placeholder">
-            <h3>[ Project name ]</h3>
+          <!-- Sketch-to-Image project -->
+          <article class="project reveal">
+            <h3>Sketch-to-Image Generation (Deep Learning)</h3>
             <p class="project-blurb">
-              [ One or two sentences: what it does, who it's for, and the single
-              most impressive technical part. ]
+              A deep-learning model that turns rough sketches into colorized
+              images. I built a custom U-Net generator and trained it as a GAN
+              (with a PatchGAN discriminator) in PyTorch, using perceptual, edge,
+              and L1 losses plus a multi-stage training curriculum to keep
+              training stable. It's wrapped in a Streamlit app where you can draw
+              or upload a sketch and get a generated image back in real time.
             </p>
             <ul class="tags">
-              <li>Tech</li>
-              <li>Tech</li>
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>Deep learning</li>
+              <li>GANs</li>
+              <li>Streamlit</li>
             </ul>
             <div class="project-links">
+              <!-- TODO: point these at the live app / repo when ready -->
               <a href="#">Live demo →</a>
-              <a href="#">Code →</a>
-            </div>
-          </article>
-
-          <article class="project reveal is-placeholder">
-            <h3>[ Project name ]</h3>
-            <p class="project-blurb">
-              [ One or two sentences describing the project and what you built. ]
-            </p>
-            <ul class="tags">
-              <li>Tech</li>
-              <li>Tech</li>
-            </ul>
-            <div class="project-links">
-              <a href="#">Live demo →</a>
-              <a href="#">Code →</a>
+              <a href="https://github.com/TylerJForstrom" target="_blank" rel="noopener">Code →</a>
             </div>
           </article>
         </div>
@@ -138,25 +130,34 @@
       <section id="about" class="section">
         <h2 class="section-title">About</h2>
         <p class="about-text">
-          [ A sentence or two about you: who you are, where you're at right now
-          (e.g. recent grad, self-taught, studying X), and what kind of role
-          you're looking for. ]
+          I'm a computer science student at Cornell, graduating in May 2026, with
+          a minor in business. Most of my projects start the same way: I get
+          curious about how something works and want to see if I can build it
+          myself. I got into investing, so I built a stock market simulator from
+          scratch. I wanted to understand how GANs actually train, so I built a
+          model that turns sketches into images.
         </p>
         <p class="about-text">
-          The throughline in my work is rigor — I build from first principles,
-          test heavily, and care more about whether a result is real than whether
-          it looks impressive.
+          What I care about most is whether the thing actually does what I say it
+          does, so I test a lot and try not to oversell my results. I've interned
+          as an app developer at Kahua working on full-stack features, and I
+          helped start an investing club at Cornell. When I'm not coding I'm
+          usually at the gym, training martial arts, gaming, or out on a golf
+          course. Right now I'm looking for software engineering roles where I can
+          build real things and work with people I can learn from.
         </p>
         <h3 class="skills-title">Tools I work with</h3>
         <ul class="skills">
           <li>Python</li>
+          <li>Java</li>
+          <li>C</li>
+          <li>OCaml</li>
+          <li>SQL</li>
+          <li>PyTorch</li>
+          <li>TensorFlow</li>
           <li>JavaScript</li>
           <li>HTML &amp; CSS</li>
-          <li>FastAPI</li>
-          <li>Docker</li>
-          <li>Git &amp; CI</li>
-          <li>pytest</li>
-          <li>Applied statistics</li>
+          <li>Git</li>
         </ul>
       </section>
 
@@ -168,8 +169,7 @@
           fastest way to reach me:
         </p>
         <div class="cta-row">
-          <!-- TODO: replace with your real email -->
-          <a class="btn" href="mailto:you@example.com">Email me</a>
+          <a class="btn" href="mailto:tylerjamesforstrom@gmail.com">Email me</a>
           <a
             class="btn btn-ghost"
             href="https://github.com/TylerJForstrom"

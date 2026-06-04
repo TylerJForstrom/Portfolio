@@ -31,19 +31,22 @@
     items.forEach((el) => io.observe(el));
   }
 
-  // --- hero pointer glow (desktop pointers only, motion-ok only) ---
-  const hero = document.querySelector(".hero");
+  // --- glow that follows the pointer across the whole page ---
+  const glow = document.querySelector(".cursor-glow");
   const finePointer =
     window.matchMedia && window.matchMedia("(pointer: fine)").matches;
-  if (hero && !reduce && finePointer) {
+  if (glow && !reduce && finePointer) {
     let queued = false;
-    hero.addEventListener("pointermove", (e) => {
+    let lx = 0;
+    let ly = 0;
+    window.addEventListener("pointermove", (e) => {
+      lx = e.clientX;
+      ly = e.clientY;
       if (queued) return;
       queued = true;
       requestAnimationFrame(() => {
-        const r = hero.getBoundingClientRect();
-        hero.style.setProperty("--mx", `${e.clientX - r.left}px`);
-        hero.style.setProperty("--my", `${e.clientY - r.top}px`);
+        glow.style.setProperty("--mx", `${lx}px`);
+        glow.style.setProperty("--my", `${ly}px`);
         queued = false;
       });
     });

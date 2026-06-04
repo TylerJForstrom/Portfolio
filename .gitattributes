@@ -1,0 +1,12 @@
+# Normalize line endings for text; never convert binary assets.
+* text=auto
+
+# Binary files — disable EOL conversion so they aren't corrupted on checkout.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary

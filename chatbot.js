@@ -32,7 +32,7 @@
   const SUGGESTIONS = [
     "What has Tyler built?",
     "Tell me about the AI copilot",
-    "Has he built any games?",
+    "How does the estimator work?",
     "What tech does he use?",
     "How do I contact him?",
   ];
@@ -40,26 +40,44 @@
   // Knowledge base. Earlier entries win ties; multi-word keywords score higher.
   const KB = [
     {
+      keywords: ["estimator", "estimate", "estimates", "estimated", "simulation-backed",
+        "simulation backed", "mock data", "market data", "less prominent", "ticker",
+        "tickers", "listed symbol", "listed symbols", "benchmark", "spy", "qqq", "schd"],
+      answer:
+        "In Portfolio Insight Copilot, the estimator is an honest fallback for listed symbols " +
+        "that do not have curated live-style demo data. It combines U.S. listed ticker metadata, " +
+        "security type classification, deterministic symbol seeding, and calibration from Tyler's " +
+        "Stock Market Simulation export, including benchmark movement and volatility context. It " +
+        "is not pretending to be a live quote feed: the app labels these as simulation-backed " +
+        "estimates so a reviewer can see the data quality and provenance.",
+    },
+    {
       keywords: ["market", "simulator", "simulation", "stock", "trading", "trade",
         "quant", "finance", "financial", "sharpe", "validation", "firewall", "sim",
         "order book", "market simulator", "stock market"],
       answer:
         "His flagship project is an <strong>agent-based stock market simulator</strong>: " +
         "prices emerge from thousands of competing trading agents on a real order book. " +
-        "He paired it with a statistical “validation firewall” (Deflated Sharpe Ratio, " +
-        "walk-forward testing, realistic costs) that honestly tests strategies — it found " +
+        "He paired it with a statistical validation firewall (Deflated Sharpe Ratio, " +
+        "walk-forward testing, realistic costs) that honestly tests strategies - it found " +
         "no reliable directional edge across eight strategy families, but showed volatility " +
-        "is forecastable. Pure Python, ~350 tests. " +
+        "is forecastable. That simulator now also calibrates the Portfolio Insight Copilot's " +
+        "benchmark and listed-symbol estimates, so the AI demo is not relying on unexplained " +
+        "mock values. Pure Python, ~350 tests. " +
         ext(L.demo, "Live demo") + " · " + ext(L.repo, "Code") + ".",
     },
     {
       keywords: ["copilot", "rag", "retrieval", "llm", "insight", "ai project",
-        "portfolio insight", "schwab", "fintech", "dashboard", "working on"],
+        "portfolio insight", "schwab", "fintech", "dashboard", "working on",
+        "portfolio builder", "builder", "holdings", "risk", "risk score",
+        "demo guide", "prompt packet", "guardrails", "portfolio"],
       answer:
-        "Tyler built an <strong>AI Portfolio Insight Copilot</strong> — a dashboard that " +
-        "explains what moved in a portfolio using movement math, sector/holding context, and " +
-        "citation-backed snippets, with non-advisory guardrails and a visible “prompt packet” " +
-        "showing the facts that would be sent to an LLM. " +
+        "Tyler built an <strong>AI Portfolio Insight Copilot</strong>: a no-cost static fintech " +
+        "AI demo where users can build a portfolio, add/edit/delete holdings, search a broad " +
+        "U.S. listed ticker universe, compare against SPY/QQQ/SCHD, and run an AI risk review " +
+        "with transparent scoring factors. It uses citation-backed context, non-advisory " +
+        "guardrails, simulation-backed estimates for less-prominent listed symbols, and an " +
+        "optional prompt-packet view for technical walkthroughs. " +
         ext(L.copilotDemo, "Live demo") + " · " + ext(L.copilotRepo, "Code") + ".",
     },
     {
@@ -74,11 +92,12 @@
       keywords: ["project", "projects", "built", "build", "made", "work", "works",
         "portfolio", "showcase", "what has", "everything"],
       answer:
-        "Tyler's projects span an <strong>AI Portfolio Insight Copilot</strong> (RAG-style, " +
-        "citation-backed) and an <strong>agent-based stock market simulator</strong> with a " +
-        "statistical validation firewall. He also built <strong>Ripple</strong>, a " +
+        "Tyler's projects span an <strong>AI Portfolio Insight Copilot</strong> with a portfolio " +
+        "builder, simulation-backed ticker estimates, benchmark comparison, citation-backed " +
+        "reasoning, and AI guardrails; plus an <strong>agent-based stock market simulator</strong> " +
+        "with a statistical validation firewall. He also built <strong>Ripple</strong>, a " +
         "wave-interference puzzle game. Want details on any?",
-      chips: ["What's the AI copilot?", "Tell me about the market simulator", "Has he built any games?"],
+      chips: ["What's the AI copilot?", "How does the estimator work?", "Tell me about the market simulator"],
     },
     {
       keywords: ["skill", "skills", "tech", "stack", "language", "languages", "tools",
@@ -143,7 +162,8 @@
       keywords: ["help", "options", "suggestions", "topics", "menu", "what can", "ask you"],
       answer:
         "I can tell you about Tyler's background, his projects (an AI Portfolio Insight " +
-        "Copilot, an agent-based stock market simulator, and the Ripple puzzle game), the " +
+        "Copilot with portfolio building and simulation-backed estimates, an agent-based " +
+        "stock market simulator, and the Ripple puzzle game), the " +
         "tech he uses, what he's looking for, or how to contact him. What would you like to know?",
     },
     {

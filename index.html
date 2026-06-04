@@ -94,17 +94,18 @@
           <article class="project reveal">
             <h3>Portfolio Insight Copilot</h3>
             <p class="project-blurb">
-              An AI-style dashboard that explains what moved in a portfolio — combining
-              movement math, holding- and sector-level context, and citation-backed source
-              snippets, with strict non-advisory guardrails. It surfaces a visible “prompt
-              packet” (the retrieved facts + policy that would be sent to an LLM) and lets you
-              dial the explanation depth, so the reasoning stays grounded and transparent.
-              Dependency-free; modeled on Schwab's AI portfolio-insight direction.
+              A no-cost, static fintech AI demo that explains portfolio moves and helps users
+              build a portfolio from scratch. Investors can add, edit, and delete holdings across
+              a broad U.S. listed ticker universe, compare performance against SPY, QQQ, and
+              SCHD, and run an AI risk review with transparent scoring factors. Less-prominent
+              listed symbols use simulation-backed estimates calibrated from my market simulator,
+              while explanations stay grounded with citations, non-advisory guardrails, and an
+              optional prompt-packet view for interview walkthroughs.
             </p>
             <ul class="tags">
               <li>JavaScript</li>
-              <li>RAG-style grounding</li>
-              <li>Citations</li>
+              <li>Fintech AI</li>
+              <li>Simulation-backed data</li>
               <li>AI guardrails</li>
             </ul>
             <div class="project-links">
@@ -123,13 +124,15 @@
               edge. Across eight strategy families it found none (the correct
               answer for efficient markets); the one signal that survived is
               volatility forecasting, competitive with industry-standard models.
-              Pure Python, ~350 tests, tamper-evident result logging.
+              Pure Python, ~350 tests, tamper-evident result logging. The simulator now also
+              feeds Portfolio Insight Copilot's benchmark and listed-symbol estimate layer,
+              giving the AI demo transparent data provenance instead of unexplained mock values.
             </p>
             <ul class="tags">
               <li>Python</li>
               <li>Simulation</li>
               <li>Applied statistics</li>
-              <li>JavaScript</li>
+              <li>Data engine</li>
             </ul>
             <div class="project-links">
               <a

@@ -9,6 +9,9 @@ GitHub Pages.
 
 ## Featured Projects
 
+- Photon Forge: a browser-based 3D ray-traced light puzzle game with Three.js,
+  draggable optics, camera controls, solved-state feedback, and a sandbox level
+  builder for custom source/target/wall puzzles.
 - Portfolio Insight Copilot: a static fintech AI demo with a portfolio builder,
   broad U.S. listed ticker search, simulation-backed estimates, benchmark
   comparison, transparent risk scoring, citations, and non-advisory guardrails.

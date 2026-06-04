@@ -23,6 +23,8 @@
     li: "https://www.linkedin.com/in/tyler-forstrom-b78730226/",
     copilotDemo: "https://portfolio-insight-tyler.netlify.app",
     copilotRepo: "https://github.com/TylerJForstrom/Portfolio-Insight-Copilot",
+    photonDemo: "https://photonforge.netlify.app",
+    photonRepo: "https://github.com/TylerJForstrom/Photon-Forge",
     rippleDemo: "https://ripple-tyler.netlify.app",
     rippleRepo: "https://github.com/TylerJForstrom/Ripple",
   };
@@ -31,6 +33,7 @@
 
   const SUGGESTIONS = [
     "What has Tyler built?",
+    "Tell me about Photon Forge",
     "Tell me about the AI copilot",
     "How does the estimator work?",
     "What tech does he use?",
@@ -83,21 +86,37 @@
     {
       keywords: ["game", "games", "ripple", "puzzle", "play", "wave", "interference", "arcade"],
       answer:
-        "Tyler built <strong>Ripple</strong>, a logic puzzle based on real wave interference: " +
-        "place emitters so the ripples reinforce to light up targets and cancel to keep others " +
-        "quiet. Vanilla JS + Canvas, with procedurally generated, guaranteed-solvable levels. " +
-        ext(L.rippleDemo, "Play") + " · " + ext(L.rippleRepo, "Code") + ".",
+        "Tyler has two browser games/demos: <strong>Photon Forge</strong>, a 3D " +
+        "ray-traced optics puzzle built with Three.js and a custom level sandbox, " +
+        "and <strong>Ripple</strong>, a Canvas puzzle based on real wave interference. " +
+        ext(L.photonDemo, "Photon Forge") + " · " + ext(L.rippleDemo, "Ripple") + ".",
+    },
+    {
+      keywords: ["photon", "forge", "photon forge", "graphics", "computer graphics",
+        "three", "threejs", "three.js", "3d", "ray", "ray tracing", "ray traced",
+        "light puzzle", "optics", "reflection", "prism", "sandbox", "custom level",
+        "cs 4620", "webgl"],
+      answer:
+        "Tyler built <strong>Photon Forge</strong>, a browser-based 3D ray-traced " +
+        "light puzzle game. Players drag optics onto a Three.js board, rotate the " +
+        "camera, move misplaced components, solve reflection/color-routing puzzles, " +
+        "and use a sandbox builder to create custom levels with draggable sources, " +
+        "targets, and walls. Technically it demonstrates ray-segment intersections, " +
+        "reflection vectors, spectral dispersion, color filtering, height-layer beam " +
+        "routing, perspective camera controls, and polished UI state. " +
+        ext(L.photonDemo, "Live demo") + " · " + ext(L.photonRepo, "Code") + ".",
     },
     {
       keywords: ["project", "projects", "built", "build", "made", "work", "works",
         "portfolio", "showcase", "what has", "everything"],
       answer:
-        "Tyler's projects span an <strong>AI Portfolio Insight Copilot</strong> with a portfolio " +
-        "builder, simulation-backed ticker estimates, benchmark comparison, citation-backed " +
-        "reasoning, and AI guardrails; plus an <strong>agent-based stock market simulator</strong> " +
-        "with a statistical validation firewall. He also built <strong>Ripple</strong>, a " +
-        "wave-interference puzzle game. Want details on any?",
-      chips: ["What's the AI copilot?", "How does the estimator work?", "Tell me about the market simulator"],
+        "Tyler's projects span <strong>Photon Forge</strong>, a 3D ray-traced light " +
+        "puzzle with a sandbox level builder; an <strong>AI Portfolio Insight Copilot</strong> " +
+        "with portfolio building, simulation-backed ticker estimates, benchmark comparison, " +
+        "citation-backed reasoning, and AI guardrails; plus an <strong>agent-based stock " +
+        "market simulator</strong> with a statistical validation firewall. He also built " +
+        "<strong>Ripple</strong>, a wave-interference puzzle game. Want details on any?",
+      chips: ["Tell me about Photon Forge", "What's the AI copilot?", "Tell me about the market simulator"],
     },
     {
       keywords: ["skill", "skills", "tech", "stack", "language", "languages", "tools",
@@ -106,7 +125,8 @@
       answer:
         "Tyler works in <strong>Python, Java, C, OCaml, and SQL</strong>, with " +
         "<strong>PyTorch</strong> and <strong>TensorFlow</strong> for ML, plus " +
-        "JavaScript / HTML / CSS and Git. He's comfortable across ML, simulation, and web.",
+        "JavaScript / HTML / CSS, <strong>Three.js/WebGL</strong>, and Git. He's " +
+        "comfortable across ML, simulation, computer graphics, and web.",
     },
     {
       keywords: ["looking", "hiring", "hire", "job", "jobs", "role", "roles",
@@ -163,7 +183,7 @@
       answer:
         "I can tell you about Tyler's background, his projects (an AI Portfolio Insight " +
         "Copilot with portfolio building and simulation-backed estimates, an agent-based " +
-        "stock market simulator, and the Ripple puzzle game), the " +
+        "stock market simulator, Photon Forge, and the Ripple puzzle game), the " +
         "tech he uses, what he's looking for, or how to contact him. What would you like to know?",
     },
     {

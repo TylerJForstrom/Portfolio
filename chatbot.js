@@ -21,14 +21,18 @@
     repo: "https://github.com/TylerJForstrom/Stock-Market-Sim",
     gh: "https://github.com/TylerJForstrom",
     li: "https://www.linkedin.com/in/tyler-forstrom-b78730226/",
+    copilotDemo: "https://portfolio-insight-tyler.netlify.app",
+    copilotRepo: "https://github.com/TylerJForstrom/Portfolio-Insight-Copilot",
+    rippleDemo: "https://ripple-tyler.netlify.app",
+    rippleRepo: "https://github.com/TylerJForstrom/Ripple",
   };
   const ext = (href, text) =>
     `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
 
   const SUGGESTIONS = [
     "What has Tyler built?",
-    "Tell me about the market simulator",
-    "What's he looking for?",
+    "Tell me about the AI copilot",
+    "Has he built any games?",
     "What tech does he use?",
     "How do I contact him?",
   ];
@@ -60,22 +64,31 @@
     },
     {
       keywords: ["copilot", "rag", "retrieval", "llm", "insight", "ai project",
-        "portfolio insight", "currently building", "working on", "building"],
+        "portfolio insight", "schwab", "fintech", "dashboard", "working on"],
       answer:
-        "He's <strong>currently building</strong> an AI portfolio-insight copilot that uses " +
-        "retrieval-augmented generation (RAG) to explain portfolio movements with " +
-        "citation-backed summaries and guardrails — grounded explanations, not investment advice.",
+        "Tyler built an <strong>AI Portfolio Insight Copilot</strong> — a dashboard that " +
+        "explains what moved in a portfolio using movement math, sector/holding context, and " +
+        "citation-backed snippets, with non-advisory guardrails and a visible “prompt packet” " +
+        "showing the facts that would be sent to an LLM. " +
+        ext(L.copilotDemo, "Live demo") + " · " + ext(L.copilotRepo, "Code") + ".",
+    },
+    {
+      keywords: ["game", "games", "ripple", "puzzle", "play", "wave", "interference", "arcade"],
+      answer:
+        "Tyler built <strong>Ripple</strong>, a logic puzzle based on real wave interference: " +
+        "place emitters so the ripples reinforce to light up targets and cancel to keep others " +
+        "quiet. Vanilla JS + Canvas, with procedurally generated, guaranteed-solvable levels. " +
+        ext(L.rippleDemo, "Play") + " · " + ext(L.rippleRepo, "Code") + ".",
     },
     {
       keywords: ["project", "projects", "built", "build", "made", "work", "works",
         "portfolio", "showcase", "what has", "everything"],
       answer:
-        "Tyler has two main projects on this site: an <strong>agent-based stock market " +
-        "simulator</strong> (with a statistical validation firewall) and a " +
-        "<strong>sketch-to-image deep-learning model</strong>. He's also building an " +
-        "<strong>AI portfolio-insight copilot</strong>. Want details on any of them?",
-      chips: ["Tell me about the market simulator", "What's the sketch-to-image project?",
-        "What's the AI copilot?"],
+        "Tyler's projects span an <strong>AI Portfolio Insight Copilot</strong> (RAG-style, " +
+        "citation-backed), an <strong>agent-based stock market simulator</strong> with a " +
+        "statistical validation firewall, and a <strong>sketch-to-image deep-learning model</strong>. " +
+        "He also built <strong>Ripple</strong>, a wave-interference puzzle game. Want details on any?",
+      chips: ["What's the AI copilot?", "Tell me about the market simulator", "Has he built any games?"],
     },
     {
       keywords: ["skill", "skills", "tech", "stack", "language", "languages", "tools",

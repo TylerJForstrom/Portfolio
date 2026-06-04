@@ -12,6 +12,10 @@ GitHub Pages.
 - Photon Forge: a browser-based 3D ray-traced light puzzle game with Three.js,
   draggable optics, camera controls, solved-state feedback, and a sandbox level
   builder for custom source/target/wall puzzles.
+- BanditFeed: a FastAPI recommendation-system demo that ranks real RSS articles
+  with contextual bandit algorithms, predicted ranking badges, match scores,
+  original article links, and an explainer connecting the mechanics to social
+  feeds and search recommendations.
 - Portfolio Insight Copilot: a static fintech AI demo with a portfolio builder,
   broad U.S. listed ticker search, simulation-backed estimates, benchmark
   comparison, transparent risk scoring, citations, and non-advisory guardrails.

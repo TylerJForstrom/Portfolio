@@ -27,12 +27,15 @@
     photonRepo: "https://github.com/TylerJForstrom/Photon-Forge",
     rippleDemo: "https://ripple-tyler.netlify.app",
     rippleRepo: "https://github.com/TylerJForstrom/Ripple",
+    banditDemo: "https://banditfeed.netlify.app",
+    banditRepo: "https://github.com/TylerJForstrom/BanditFeed",
   };
   const ext = (href, text) =>
     `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
 
   const SUGGESTIONS = [
     "What has Tyler built?",
+    "Tell me about BanditFeed",
     "Tell me about Photon Forge",
     "Tell me about the AI copilot",
     "How does the estimator work?",
@@ -84,6 +87,21 @@
         ext(L.copilotDemo, "Live demo") + " · " + ext(L.copilotRepo, "Code") + ".",
     },
     {
+      keywords: ["bandit", "banditfeed", "bandit feed", "recommendation",
+        "recommendations", "recommender", "ranking", "rankings", "feed",
+        "articles", "article", "rss", "real articles", "linucb", "thompson",
+        "exploration", "exploitation", "search recommendations", "social media"],
+      answer:
+        "Tyler built <strong>BanditFeed</strong>, a recommendation-system demo that ranks " +
+        "real RSS articles with contextual bandit algorithms. Users tune interests, get a " +
+        "personalized feed with predicted ranking badges and match scores, open the original " +
+        "articles, and watch clicks update the model's beliefs. It includes a \"Why?\" explainer " +
+        "that connects exploration/exploitation to the recommendation loops behind social feeds, " +
+        "search, and content platforms. Tech: FastAPI, vanilla JavaScript, LinUCB-style scoring, " +
+        "and real article metadata. " +
+        ext(L.banditDemo, "Live demo") + " · " + ext(L.banditRepo, "Code") + ".",
+    },
+    {
       keywords: ["game", "games", "ripple", "puzzle", "play", "wave", "interference", "arcade"],
       answer:
         "Tyler has two browser games/demos: <strong>Photon Forge</strong>, a 3D " +
@@ -110,23 +128,26 @@
       keywords: ["project", "projects", "built", "build", "made", "work", "works",
         "portfolio", "showcase", "what has", "everything"],
       answer:
-        "Tyler's projects span <strong>Photon Forge</strong>, a 3D ray-traced light " +
-        "puzzle with a sandbox level builder; an <strong>AI Portfolio Insight Copilot</strong> " +
-        "with portfolio building, simulation-backed ticker estimates, benchmark comparison, " +
-        "citation-backed reasoning, and AI guardrails; plus an <strong>agent-based stock " +
-        "market simulator</strong> with a statistical validation firewall. He also built " +
-        "<strong>Ripple</strong>, a wave-interference puzzle game. Want details on any?",
-      chips: ["Tell me about Photon Forge", "What's the AI copilot?", "Tell me about the market simulator"],
+        "Tyler's projects span <strong>BanditFeed</strong>, a real-article recommendation " +
+        "demo using contextual bandits; <strong>Photon Forge</strong>, a 3D ray-traced " +
+        "light puzzle with a sandbox level builder; an <strong>AI Portfolio Insight " +
+        "Copilot</strong> with portfolio building, simulation-backed ticker estimates, " +
+        "benchmark comparison, citation-backed reasoning, and AI guardrails; plus an " +
+        "<strong>agent-based stock market simulator</strong> with a statistical validation " +
+        "firewall. He also built <strong>Ripple</strong>, a wave-interference puzzle game. " +
+        "Want details on any?",
+      chips: ["Tell me about BanditFeed", "Tell me about Photon Forge", "What's the AI copilot?"],
     },
     {
       keywords: ["skill", "skills", "tech", "stack", "language", "languages", "tools",
         "technology", "technologies", "programming", "frameworks", "framework",
-        "python", "java", "ocaml", "sql", "tensorflow"],
+        "python", "java", "ocaml", "sql", "tensorflow", "fastapi"],
       answer:
         "Tyler works in <strong>Python, Java, C, OCaml, and SQL</strong>, with " +
         "<strong>PyTorch</strong> and <strong>TensorFlow</strong> for ML, plus " +
-        "JavaScript / HTML / CSS, <strong>Three.js/WebGL</strong>, and Git. He's " +
-        "comfortable across ML, simulation, computer graphics, and web.",
+        "JavaScript / HTML / CSS, <strong>FastAPI</strong>, <strong>Three.js/WebGL</strong>, " +
+        "and Git. He's comfortable across ML, recommendation systems, simulation, computer " +
+        "graphics, and web.",
     },
     {
       keywords: ["looking", "hiring", "hire", "job", "jobs", "role", "roles",
@@ -181,10 +202,10 @@
     {
       keywords: ["help", "options", "suggestions", "topics", "menu", "what can", "ask you"],
       answer:
-        "I can tell you about Tyler's background, his projects (an AI Portfolio Insight " +
-        "Copilot with portfolio building and simulation-backed estimates, an agent-based " +
-        "stock market simulator, Photon Forge, and the Ripple puzzle game), the " +
-        "tech he uses, what he's looking for, or how to contact him. What would you like to know?",
+        "I can tell you about Tyler's background, his projects (BanditFeed, an AI Portfolio " +
+        "Insight Copilot with portfolio building and simulation-backed estimates, an " +
+        "agent-based stock market simulator, Photon Forge, and the Ripple puzzle game), " +
+        "the tech he uses, what he's looking for, or how to contact him. What would you like to know?",
     },
     {
       keywords: ["thanks", "thank", "ty", "appreciate", "thx", "cheers"],

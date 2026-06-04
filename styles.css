@@ -156,6 +156,37 @@ main {
   padding: 96px 0 72px;
   --mx: 50%;
   --my: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52px;
+}
+.hero-text {
+  flex: 1 1 440px;
+  min-width: 0;
+}
+.hero-photo {
+  flex: 0 0 auto;
+  align-self: center;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--grad);
+  box-shadow: 0 0 60px rgba(129, 140, 248, 0.22);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.hero-photo:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 80px rgba(34, 211, 238, 0.3);
+}
+.hero-photo img {
+  display: block;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg);
 }
 .hero::before {
   content: "";
@@ -482,6 +513,18 @@ main {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .hero-photo img {
+    width: 150px;
+    height: 150px;
   }
 }
 

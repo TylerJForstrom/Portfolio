@@ -53,16 +53,6 @@
         ext(L.demo, "Live demo") + " · " + ext(L.repo, "Code") + ".",
     },
     {
-      keywords: ["sketch", "image", "gan", "gans", "pytorch", "unet", "generative",
-        "draw", "drawing", "picture", "colorize", "u-net", "sketch to image",
-        "deep learning"],
-      answer:
-        "He built a <strong>sketch-to-image model</strong> that turns rough drawings into " +
-        "colorized images — a custom U-Net generator trained as a GAN (PatchGAN " +
-        "discriminator) in PyTorch, with perceptual, edge, and L1 losses and a multi-stage " +
-        "training curriculum. It runs in a Streamlit app.",
-    },
-    {
       keywords: ["copilot", "rag", "retrieval", "llm", "insight", "ai project",
         "portfolio insight", "schwab", "fintech", "dashboard", "working on"],
       answer:
@@ -85,9 +75,9 @@
         "portfolio", "showcase", "what has", "everything"],
       answer:
         "Tyler's projects span an <strong>AI Portfolio Insight Copilot</strong> (RAG-style, " +
-        "citation-backed), an <strong>agent-based stock market simulator</strong> with a " +
-        "statistical validation firewall, and a <strong>sketch-to-image deep-learning model</strong>. " +
-        "He also built <strong>Ripple</strong>, a wave-interference puzzle game. Want details on any?",
+        "citation-backed) and an <strong>agent-based stock market simulator</strong> with a " +
+        "statistical validation firewall. He also built <strong>Ripple</strong>, a " +
+        "wave-interference puzzle game. Want details on any?",
       chips: ["What's the AI copilot?", "Tell me about the market simulator", "Has he built any games?"],
     },
     {
@@ -152,9 +142,9 @@
     {
       keywords: ["help", "options", "suggestions", "topics", "menu", "what can", "ask you"],
       answer:
-        "I can tell you about Tyler's background, his projects (the stock market simulator, " +
-        "the sketch-to-image model, and an AI copilot he's building), the tech he uses, " +
-        "what he's looking for, or how to contact him. What would you like to know?",
+        "I can tell you about Tyler's background, his projects (an AI Portfolio Insight " +
+        "Copilot, an agent-based stock market simulator, and the Ripple puzzle game), the " +
+        "tech he uses, what he's looking for, or how to contact him. What would you like to know?",
     },
     {
       keywords: ["thanks", "thank", "ty", "appreciate", "thx", "cheers"],

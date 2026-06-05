@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#0a0e16" />
-    <title>Tyler Forstrom — Software Engineer</title>
+    <title>Tyler Forstrom | Software Engineer</title>
     <meta
       name="description"
-      content="Tyler Forstrom — software engineer. I build well-tested, reproducible systems, from simulation engines to statistical validation pipelines to clean web frontends."
+      content="Tyler Forstrom, software engineer and Cornell CS student building practical AI, simulation, graphics, and web projects."
     />
     <!-- Nice link previews when you share the URL (LinkedIn, texts, etc.) -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tyler Forstrom — Software Engineer" />
+    <meta property="og:title" content="Tyler Forstrom | Software Engineer" />
     <meta
       property="og:description"
-      content="I build well-tested, reproducible systems. See my work."
+      content="Software engineering projects in AI, simulation, graphics, and web development."
     />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -45,14 +45,15 @@
           <p class="eyebrow">Software Engineer</p>
           <h1>Tyler Forstrom</h1>
           <p class="tagline">
-            I build well-tested systems that are honest about what they can —
-            and can't — do.
+            I like building useful software that is easy to try, easy to explain,
+            and honest about its limits.
           </p>
           <p class="intro">
-            From simulation engines and statistical pipelines to clean web
-            frontends, I turn ambiguous problems into systems that are
-            reproducible, well-tested, and clear. I'd rather ship a result I can
-            defend than a demo that overpromises.
+            I'm a Cornell computer science student focused on projects where the
+            engineering and the user experience both matter: AI tools, market
+            simulations, graphics demos, and clean web apps. I care about making
+            things that actually work, not just things that look good in a
+            screenshot.
           </p>
           <div class="cta-row">
             <a class="btn" href="#work">View my work ↓</a>
@@ -94,13 +95,12 @@
           <article class="project reveal">
             <h3>Portfolio Insight Copilot</h3>
             <p class="project-blurb">
-              A no-cost, static fintech AI demo that explains portfolio moves and helps users
-              build a portfolio from scratch. Investors can add, edit, and delete holdings across
-              a broad U.S. listed ticker universe, compare performance against SPY, QQQ, and
-              SCHD, and run an AI risk review with transparent scoring factors. Less-prominent
-              listed symbols use simulation-backed estimates calibrated from my market simulator,
-              while explanations stay grounded with citations, non-advisory guardrails, and an
-              optional prompt-packet view for interview walkthroughs.
+              A portfolio analysis demo built around a simple question: how do you make an AI
+              finance tool feel useful without pretending it is a financial advisor? Users can
+              build a portfolio, add or edit holdings, search a broad U.S. ticker universe,
+              compare against SPY, QQQ, and SCHD, and run an AI risk review with clear scoring
+              factors. For less-prominent symbols, the app labels simulation-backed estimates
+              instead of hiding the data quality.
             </p>
             <ul class="tags">
               <li>JavaScript</li>
@@ -118,12 +118,11 @@
           <article class="project reveal">
             <h3>BanditFeed</h3>
             <p class="project-blurb">
-              A live recommendation-system demo that ranks real RSS articles with contextual
-              bandit algorithms. Users tune their interests, read a personalized feed with
-              predicted ranking badges and match scores, open the original articles, and watch
-              every click update the model's beliefs. The app also includes a "Why?" explainer
-              that connects the demo to the recommendation loops behind social feeds, search,
-              and content platforms.
+              A hands-on recommender demo that makes the learning loop visible. BanditFeed ranks
+              real RSS articles with contextual bandit algorithms, shows why each article was
+              recommended, and updates its beliefs as users click or skip items. It is meant to
+              make the same explore-vs-recommend tradeoff behind feeds, search, and content apps
+              feel concrete instead of abstract.
             </p>
             <ul class="tags">
               <li>FastAPI</li>
@@ -141,15 +140,12 @@
           <article class="project reveal">
             <h3>Agent-Based Market Simulator &amp; Strategy Validation Firewall</h3>
             <p class="project-blurb">
-              A from-scratch stock market where the price <em>emerges</em> from
-              thousands of interacting trader-agents — paired with a statistical
-              "firewall" that honestly tests whether a trading strategy has real
-              edge. Across eight strategy families it found none (the correct
-              answer for efficient markets); the one signal that survived is
-              volatility forecasting, competitive with industry-standard models.
-              Pure Python, ~350 tests, tamper-evident result logging. The simulator now also
-              feeds Portfolio Insight Copilot's benchmark and listed-symbol estimate layer,
-              giving the AI demo transparent data provenance instead of unexplained mock values.
+              A stock market simulation built from the ground up, where prices come from
+              thousands of trader-agents interacting through an order book. I paired it with a
+              statistical validation layer to test whether strategies actually had edge after
+              costs and walk-forward testing. Most directional strategies failed, which was the
+              honest result; volatility forecasting was the useful signal that held up. The
+              simulator also provides calibration data for Portfolio Insight Copilot.
             </p>
             <ul class="tags">
               <li>Python</li>
@@ -183,14 +179,12 @@
           <article class="project reveal">
             <h3>Photon Forge</h3>
             <p class="project-blurb">
-              A browser-based 3D ray-traced light puzzle game built as a computer
-              graphics demo. Players drag optical components onto a Three.js board,
-              rotate the camera, move misplaced optics, solve reflection and color
-              routing puzzles, and build custom sandbox levels with draggable
-              source, target, and wall tools. The project demonstrates ray-segment
-              intersections, reflection vectors, spectral dispersion, filtering,
-              height-layer beam routing, perspective camera controls, and polished
-              first-run onboarding.
+              A 3D light puzzle game built to make computer graphics concepts playable. Players
+              drag mirrors, prisms, filters, sources, targets, and walls onto a Three.js board,
+              then solve puzzles by routing beams through the scene. Under the hood it uses
+              ray-segment intersections, reflection vectors, color filtering, height-layer beam
+              routing, and camera controls, but the goal is still simple: make the puzzle feel
+              intuitive.
             </p>
             <ul class="tags">
               <li>JavaScript</li>
@@ -205,14 +199,12 @@
           </article>
 
           <article class="project reveal">
-            <h3>Ripple — a wave-interference puzzle</h3>
+            <h3>Ripple: a wave-interference puzzle</h3>
             <p class="project-blurb">
-              A logic puzzle built on real wave physics: drop emitters and their
-              ripples interfere — reinforcing into bright spots, cancelling into
-              dark ones. Solve each level by placing sources so the pattern lights
-              the right targets and silences the others. Vanilla JS + Canvas;
-              levels are procedurally generated from a known solution, so every
-              puzzle is guaranteed solvable.
+              A small browser puzzle about wave interference. Players place emitters so ripples
+              reinforce the targets they want and cancel the ones they do not. It is built with
+              vanilla JavaScript and Canvas, and the levels are generated from known solutions so
+              every puzzle is solvable instead of randomly unfair.
             </p>
             <ul class="tags">
               <li>JavaScript</li>
@@ -232,21 +224,19 @@
       <section id="about" class="section">
         <h2 class="section-title">About</h2>
         <p class="about-text">
-          I'm a computer science student at Cornell, graduating in May 2026, with
-          a minor in business. Most of my projects start the same way: I get
-          curious about how something works and want to see if I can build it
-          myself. I got into investing, so I built a stock market simulator from
-          scratch. I wanted to understand how GANs actually train, so I built a
-          model that turns sketches into images.
+          I'm a computer science student at Cornell, graduating in December 2026, with
+          a minor in business. I tend to learn by building. If I get interested in a
+          system, I try to make a working version of it: a market simulator to understand
+          trading behavior, a recommendation demo to understand ranking algorithms, or a
+          graphics puzzle to understand rays, reflections, and 3D interaction.
         </p>
         <p class="about-text">
-          What I care about most is whether the thing actually does what I say it
-          does, so I test a lot and try not to oversell my results. I've interned
-          as an app developer at Kahua working on full-stack features, and I
-          helped start an investing club at Cornell. When I'm not coding I'm
-          usually at the gym, training martial arts, gaming, or out on a golf
-          course. Right now I'm looking for software engineering roles where I can
-          build real things and work with people I can learn from.
+          I care about building things that can be explained and tested. I've interned
+          as an app developer at Kahua, worked on full-stack features, and helped start
+          an investing club at Cornell. Outside of coding, I'm usually at the gym,
+          training martial arts, gaming, or out on a golf course. Right now I'm looking
+          for software engineering roles where I can keep building practical systems
+          and learn from strong engineers.
         </p>
         <h3 class="skills-title">Tools I work with</h3>
         <ul class="skills">
@@ -267,8 +257,8 @@
       <section id="contact" class="section">
         <h2 class="section-title">Get in touch</h2>
         <p class="about-text">
-          I'm open to software engineering roles and interesting problems. The
-          fastest way to reach me:
+          I'm open to software engineering roles, internships, and projects where I can
+          contribute quickly and keep learning. The fastest way to reach me:
         </p>
         <div class="cta-row">
           <a class="btn" href="mailto:tylerjamesforstrom@gmail.com">Email me</a>
@@ -293,7 +283,7 @@
     <footer class="footer">
       <p>
         © <span id="year">2026</span> Tyler Forstrom · Built from scratch with
-        HTML, CSS &amp; JavaScript — no frameworks.
+        HTML, CSS &amp; JavaScript, no frameworks.
       </p>
     </footer>
 

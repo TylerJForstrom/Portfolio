@@ -1,112 +1,523 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%âãÏÓ
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 7 0 R
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (Tyler Forstrom)
+/CreationDate (D\07220260604084432\05504\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220260604084432\05504\04700\047)
+/Subject (\050unspecified\051)
+/Title (Tyler Forstrom \055 Resume)
+/Trapped (\057False)
 >>
 endobj
 2 0 obj
 <<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
 >>
 endobj
 3 0 obj
 <<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+/Type /Catalog
+/Pages 2 0 R
 >>
 endobj
 4 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (mailto:tylerjamesforstrom@gmail.com)
->> /Border [ 0 0 0 ] /Rect [ 361.5705 716.2 485.7165 727 ] /Subtype /Link /Type /Annot
+/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R ]
+/Contents 9 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 10 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
 >>
 endobj
 5 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/TylerJForstrom)
->> /Border [ 0 0 0 ] /Rect [ 167.292 703.7 274.311 714.5 ] /Subtype /Link /Type /Annot
+/S /URI
+/Type /Action
+/URI (mailto\072tylerjamesforstrom\100gmail\056com)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 361.5705 716.2 485.7165 727 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 6 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://www.linkedin.com/in/tyler-forstrom-b78730226/)
->> /Border [ 0 0 0 ] /Rect [ 281.655 703.7 444.708 714.5 ] /Subtype /Link /Type /Annot
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057TylerJForstrom)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 167.292 703.7 274.311 714.5 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 7 0 obj
 <<
-/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057www\056linkedin\056com\057in\057tyler\055forstrom\055b78730226\057)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 281.655 703.7 444.708 714.5 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 8 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/TylerJForstrom/Stock-Market-Sim)
->> /Border [ 0 0 0 ] /Rect [ 49.2 534.875 230.226 546.875 ] /Subtype /Link /Type /Annot
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057TylerJForstrom\057Stock\055Market\055Sim)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 49.2 534.875 230.226 546.875 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 9 0 obj
 <<
-/Annots [ 4 0 R 5 0 R 6 0 R 8 0 R ] /Contents 13 0 R /MediaBox [ 0 0 612 792 ] /Parent 12 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
+/Length 8497
 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 49.2 729 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 3 Tm /F2 18 Tf 21 TL 193.287 0 Td (Tyler Forstrom) Tj T* -193.287 0 Td ET
+Q
+Q
+q
+1 0 0 1 49.2 702 cm
+q
+BT 1 0 0 1 0 16 Tm 77.0835 0 Td 12.5 TL /F1 9 Tf .333333 .333333 .333333 rg (2 Tower Road, East Hartford, CT 06108 | \(475\) 239-9648 | ) Tj (tylerjamesforstrom@gmail.com) Tj  T* 41.0085 0 Td (github.com/TylerJForstrom) Tj ( | ) Tj (linkedin.com/in/tyler-forstrom-b78730226) Tj T* -118.092 0 Td ET
+Q
+Q
+q
+1 0 0 1 49.2 697.2 cm
+q
+.8 w
+1 J
+.6 .6 .6 RG
+n 0 0 m 513.6 0 l S
+Q
+Q
+q
+1 0 0 1 49.2 675.2 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (EDUCATION) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 673.6 cm
+q
+.6 w
+1 J
+.6 .6 .6 RG
+n 0 0 m 513.6 0 l S
+Q
+Q
+q
+1 0 0 1 43.2 656.1 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 1 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10 Tf 12.5 TL (Cornell University, College of Engineering) Tj T* ET
+Q
+Q
+q
+1 0 0 1 336.384 1 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 3.5 Tm /F3 9 Tf 12.5 TL 147.195 0 Td (Ithaca, NY) Tj T* -147.195 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.2 642.6 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 1 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10 Tf 12.5 TL (Bachelor of Science in Computer Science, Minor in Business) Tj T* ET
+Q
+Q
+q
+1 0 0 1 336.384 1 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 3.5 Tm /F3 9 Tf 12.5 TL 85.167 0 Td (Expected December 2026) Tj T* -109.674 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 49.2 620.6 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (EXPERIENCE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 619 cm
+q
+.6 w
+1 J
+.6 .6 .6 RG
+n 0 0 m 513.6 0 l S
+Q
+Q
+q
+1 0 0 1 43.2 601.5 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 1 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10 Tf 12.5 TL (App Developer Intern, Kahua \(Construction Software Company\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 336.384 1 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 3.5 Tm /F3 9 Tf 12.5 TL 149.697 0 Td (Internship) Tj T* -149.697 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 49.2 589.5 cm
+q
+BT 1 0 0 1 3 2.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 2.5 Tm /F1 9.5 Tf 12 TL (Developed web applications to support construction project workflows and improve data accessibility.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 576.5 cm
+q
+BT 1 0 0 1 3 2.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 2.5 Tm /F1 9.5 Tf 12 TL (Built and integrated full-stack features with a focus on performance and user-friendly design.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 563.5 cm
+q
+BT 1 0 0 1 3 2.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 2.5 Tm /F1 9.5 Tf 12 TL (Collaborated on tools that streamline communication and organization for project teams.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 558.5 cm
+Q
+q
+1 0 0 1 43.2 545 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 1 cm
+q
+BT 1 0 0 1 0 2.5 Tm 12.5 TL /F2 10 Tf .101961 .101961 .101961 rg (Agent-Based Stock Market Simulator & Strategy Validation Pipeline) Tj T* ET
+Q
+Q
+q
+1 0 0 1 336.384 1 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 3.5 Tm /F3 9 Tf 12.5 TL 72.819 0 Td (Personal Project | 2025-2026) Tj T* -70.812 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 49.2 533 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 3 Tm /F3 9 Tf 12 TL (github.com/TylerJForstrom/Stock-Market-Sim) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 508 cm
+q
+BT 1 0 0 1 3 14.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 14.5 Tm /F1 9.5 Tf 12 TL (Built an agent-based limit-order-book market simulator in pure Python where prices emerge from competing trading) Tj T* (agents \(market makers, momentum, mean-reversion, and institutional order flow\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 483 cm
+q
+BT 1 0 0 1 3 14.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 14.5 Tm /F1 9.5 Tf 12 TL (Designed a statistical validation pipeline \(Deflated Sharpe Ratio with multiple-testing correction, walk-forward) Tj T* (out-of-sample testing, and realistic trading costs\) to test strategies honestly and avoid false positives.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 458 cm
+q
+BT 1 0 0 1 3 14.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 14.5 Tm /F1 9.5 Tf 12 TL (Found no reliable directional edge across eight strategy families, and built a volatility forecaster competitive with) Tj T* (industry-standard models \(HAR-RV, EWMA\) out-of-sample on equities and crypto.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 433 cm
+q
+BT 1 0 0 1 3 14.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 14.5 Tm /F1 9.5 Tf 12 TL (Wrote ~350 automated tests with continuous integration and a tamper-evident research log; implemented all statistics) Tj T* (from scratch with no external numerical libraries.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 428 cm
+Q
+q
+1 0 0 1 43.2 414.5 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 1 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10 Tf 12.5 TL (Sketch-to-Image Enhancement Using Deep Learning \(PyTorch\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 336.384 1 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 3.5 Tm /F3 9 Tf 12.5 TL 66.339 0 Td (Personal Project | Hartford, CT) Tj T* -66.339 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 49.2 390.5 cm
+q
+BT 1 0 0 1 3 14.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 14.5 Tm /F1 9.5 Tf 12 TL (Built a sketch-to-image generation model using custom U-Net architectures and GAN training \(PatchGAN) Tj T* (discriminator\) in PyTorch.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 377.5 cm
+q
+BT 1 0 0 1 3 2.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 2.5 Tm /F1 9.5 Tf 12 TL (Implemented perceptual, edge, and L1 reconstruction losses to improve realism and stability.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 364.5 cm
+q
+BT 1 0 0 1 3 2.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 2.5 Tm /F1 9.5 Tf 12 TL (Created a full training pipeline with a multi-stage curriculum \(warmup, then GAN, then deep-model refinement\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 351.5 cm
+q
+BT 1 0 0 1 3 2.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 2.5 Tm /F1 9.5 Tf 12 TL (Developed a Streamlit app enabling users to draw or upload sketches and generate colorized outputs in real time.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 329.5 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (ACTIVITIES) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 327.9 cm
+q
+.6 w
+1 J
+.6 .6 .6 RG
+n 0 0 m 513.6 0 l S
+Q
+Q
+q
+1 0 0 1 43.2 310.4 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 1 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10 Tf 12.5 TL (Investments in Technology @ Cornell) Tj T* ET
+Q
+Q
+q
+1 0 0 1 336.384 1 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 3.5 Tm /F3 9 Tf 12.5 TL 102.825 0 Td (Ithaca, NY | Jan 2023) Tj T* -102.825 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 49.2 298.4 cm
+q
+BT 1 0 0 1 0 3 Tm 12 TL /F3 9 Tf .333333 .333333 .333333 rg (Founder, Treasurer & Portfolio Manager) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 273.4 cm
+q
+BT 1 0 0 1 3 14.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 14.5 Tm /F1 9.5 Tf 12 TL (Co-founded a club focused on teaching students about investing in the tech industry and managing a real investment) Tj T* (portfolio.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 248.4 cm
+q
+BT 1 0 0 1 3 14.5 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
+.101961 .101961 .101961 rg
+BT 1 0 0 1 14 14.5 Tm /F1 9.5 Tf 12 TL (Collaborated with a team to develop educational materials, organize meetings, and lead discussions on investment) Tj T* (strategies, market trends, and risk management.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 226.4 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (ADDITIONAL INFORMATION) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 224.8 cm
+q
+.6 w
+1 J
+.6 .6 .6 RG
+n 0 0 m 513.6 0 l S
+Q
+Q
+q
+1 0 0 1 49.2 208.3 cm
+q
+BT 1 0 0 1 0 3 Tm 12.5 TL /F2 9.5 Tf .101961 .101961 .101961 rg (Technical Skills:) Tj /F1 9.5 Tf ( Java, Python, C, OCaml, PyTorch, TensorFlow, SQL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 49.2 194.8 cm
+q
+BT 1 0 0 1 0 3 Tm 12.5 TL /F2 9.5 Tf .101961 .101961 .101961 rg (Interests:) Tj /F1 9.5 Tf ( Martial Arts, Gaming, Investing, Weightlifting, Golf) Tj T* ET
+Q
+Q
+ 
+
+endstream
 endobj
 10 0 obj
 <<
-/PageMode /UseNone /Pages 12 0 R /Type /Catalog
+/F1 11 0 R
+/F2 12 0 R
+/F3 13 0 R
 >>
 endobj
 11 0 obj
 <<
-/Author (Tyler Forstrom) /CreationDate (D:20260604084432-04'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260604084432-04'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Tyler Forstrom - Resume) /Trapped /False
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 12 0 obj
 <<
-/Count 1 /Kids [ 9 0 R ] /Type /Pages
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 13 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 2784
+/BaseFont /Helvetica-Oblique
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
 >>
-stream
-Gb!#]gN)%.&q0LUo[B,3,r*'r])+7Cm:;H@*QM3Dh($0),U?e,&f_Ii7T37_m<\h>/B8Q<PE[;!,n^>!Vb`rQL'$r9*Ork(9(Zjf04+quKJZn0d.dAnHUfHiKAR2kH=VNbKes,a(lkY'i!5HS5[XNBb6(EQ['N7Z9/1KY_:[$Q#'Sj2&p`G\K\Nhd3jXh,RU.LM(p24&2#E8EJ#D.o6*TDP^;%%p%kDG`//\l`R\Q#.O/##6GS#0']<L,N`7j0=md&_Z]qc,\:hs0TTifa>'35tHQ"dR$)K1[Kj:;?B9RkGiV`u))]q@'JoHqJi^#Y.@(qZL!=NZOj]r>A).21-flg<C(o`NP7a0g>dV(erjD?mgrE4ijd8#Mn]MX6cZ,'+ttp<kPCCR4508)mJ-LZ._<`F/'.POL"8LQdj%j62J:NLOhs]HL9>(N0d=2`RX"&E/4:OtIiHAi+2!q+>ZeYLN46m;#NOZ@;)/*.L(3S5%n52&ghZoT;#1>''IUVFPfu_9`RiBmb-<1=QJ\n#QlbKnK@&p<?X%<i#(%.@kH-l!l&X\1WHfJ7hJH^>u(*FHS4E`jll<nkh6<B]qnFIV[E-o_p$q)k3QO//j_(rl>Ho%6:=u`F@DpZiAh/C3r3]c%cP?m>$[^IKm<c=M3WkBoD%`/9hqO&fL15o?nc(lYBce'cBL"euQ(VhF6sN@/CUU39o+'TDXiCf^OPhfnMhC4-[4p4c[(2MpQD&iqm6Uhrc@'e!%,5P9%IV9R]5Tq>hB3Bl#fRF#rGB+A<8_9J\@JldEQ#WasKR,F(Q-bLd)cdA:$62:L>XM.N0W(XEng+MspGT9YPX9&s4(\M`;ZV@:J.#4J\%UK`QBir1pSe@>oU,A.'Yr&RUVrU"_S2='$aS]2$DXneJhSkBYO$[b60;,QJddY?auO5sLCL=i3-danl+eci<0+d(d\%B"js7P'Q3fjZQZ<7ZDbc\'Va5G<@&$>HNR_=pUIXB[;K.=6bWnMMmX1Ss4;X\i(0UP4TKJh0/lUJsdPeNj"V=kM_"6N@e1TnF4kRI(&e)!r\!2IWo%WkcDVND^Bg=YW9O#\PSY-P!kdBpmLFEYp4<A=<5!\c?hU()]55lp>29Y0a\V@tXb>X4Td;F^)X>P4]NpLJ+5,hCDV,MG'^0M,U:T\Y2ZYQBE-Pno)$HZ!)&/'9aW>p4"]8DK0tT,oc[:32hbac8fV]Pqbkn[0Q]:q/:5+EqW6LgjWpl\A=F0cd"2FFNf'<2Ljtqm8_g4JF*iPTPM%Z39[cA-ZZX3H<<t!3Sqt#DkopXl(R9k7*Lq-VR3'od8C7H;@]+go8Qn(46mX%Rp6=L/Fes?<3H\&A7I7T#1Y5TEQM5rgMuNo8?DL>.D#ch\s03/2p)i<36QW:]<YN^'3Co0(h$$0=HLL)865/^?L3L!r]&V-#95he"m?@uKh0/]@VkGo2DF_`0S.b/?UuPbQReqS:)A(A-2$bd&\6sc_[?]oXL.+B3Hf,]jL+@h;6qOM#?2!O07!dpnJKf;<A6crV6ct;)eLToJVG!:f8d5LC)'.Ph]Mp%+Gn_ufo6V885'fWK0heT[Utkhp'5p_*3WA!/S,968AXFR.1nG7E"Pm]EY`FjJFd6\C-gN\s!arV?;tU`Wu.TN"m<G]_^6<DZbeUDFbj.mS0qP@Lb'u0j2P^)/:lsq)[VihApunUkZrT$d`L\$6TF21-UAXLH\i&S<<U9eP8gpQ#LT-_a(ML_VuK3gT3,f,lKE.8=I2"G!l<VhTuq(!U*dQ01-bs\`c"6H;1TYoc?-]CWL!Rk`M)?nCi&U7"`M;^mJ].A_ho:PiZYcNaM@h[75kL6Pu'LXX]!A#6S5^0l/DERMP9M4s3j$$9*fLLl5A-AVU/m8a]>iF[+NaG_M8(Fk;g3XGaWu(eN)O2'S(SF^1W8TU<2HG_Y,Ea>:jYUoQ7JP:&G5hgH>gm3^Zin3_;:Y+b0'OlqS@qFIkh0O!p]_]e^p696O`oOD>/=9Y<AJZ^NKb5?_[Z>0H\/JF5u.R8*:7(*rb1f/ooONCNfu*)*iY*+BKNgltKUSU=N8r!q3G45H]cVK:@*2B?=n&Q:V06Le&MA2NZA-R;47NDi!l3Ss>#XYf>*dFAphrIAd*WM+I2/5sn"F[TEq?*m]rZ]qIs,uBG)77PN<R)m.YZS[RE_1'7CHOR`,a5m(f@uhjjB;c"c@^_2<4@qA6UE66eQ\m)3YgtO18#krAV:+@!gSC,^09&\/N`fm\b'1Z9[\l"?J$+!?1n/r_cDDtU]+uE45N$'*_XdYtQf"YXMGTMJL'*7XGeD2W$5@6i:ji?DHj@BZ2\,;KXs8Y672L\j2qg=bh&?04rX(%5#2oAQD$=fmb#=p^\Vca>0$QZ)!a3F4(7ZnE>9u=i;jK]Wo[B<:8'qFIlpWNi;Wr`!%W+bWZCG"ZA+cf5B?6AElGAdBisM8#:;N<e\toIPTQ:s+C9X\_?%f*k(H[4Ki@J0L[>?bZ5hlt6@K.KHmKn2Da)#mUYU=!Ws!k-=<\:?S2P=GnFY1rIG+4[RNi(YR#Lo<,jNpM'Eg0#ONd'H:#I(gW2S742"QVO8l<1JBXt(<uKX2'EE7b0g"*F21G\TIC4FBZJZe+Y!:;>e@b:r:0j6tGr2iU&qme:O7aPWR,ekUUM-r(@[-ZaPbUb)N(G-Jr9%b0_I6<0TNTZHQLq]k1>DGqQB0mH_IrE?4DQS(M8HQ%NEdUM_%`k)aICd[uJeYd'g^d's1#%W"3[bMpD9Ugk+dV%1B9<kGP^/8q@L#mFG5>Z`</c~>endstream
 endobj
 xref
 0 14
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000510 00000 n 
-0000000687 00000 n 
-0000000884 00000 n 
-0000000999 00000 n 
-0000001194 00000 n 
-0000001425 00000 n 
-0000001495 00000 n 
-0000001787 00000 n 
-0000001847 00000 n 
+0000000015 00000 n 
+0000000350 00000 n 
+0000000409 00000 n 
+0000000458 00000 n 
+0000000684 00000 n 
+0000000872 00000 n 
+0000001064 00000 n 
+0000001291 00000 n 
+0000001510 00000 n 
+0000010059 00000 n 
+0000010114 00000 n 
+0000010222 00000 n 
+0000010335 00000 n 
 trailer
 <<
-/ID 
-[<6afa030d0dcdbd487d2230ffd8d311c0><6afa030d0dcdbd487d2230ffd8d311c0>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 11 0 R
-/Root 10 0 R
 /Size 14
+/Root 3 0 R
+/Info 1 0 R
 >>
 startxref
-4723
+10451
 %%EOF

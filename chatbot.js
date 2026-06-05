@@ -1,6 +1,6 @@
 /* A small, dependency-free "ask about my projects" assistant.
  *
- * It answers from a curated knowledge base using lightweight keyword scoring —
+ * It answers from a curated knowledge base using lightweight keyword scoring,
  * no API, no backend, no cost, and (by design) it never makes things up. If a
  * question doesn't match anything it knows, it says so and offers topics.
  */
@@ -50,26 +50,23 @@
         "simulation backed", "mock data", "market data", "less prominent", "ticker",
         "tickers", "listed symbol", "listed symbols", "benchmark", "spy", "qqq", "schd"],
       answer:
-        "In Portfolio Insight Copilot, the estimator is an honest fallback for listed symbols " +
-        "that do not have curated live-style demo data. It combines U.S. listed ticker metadata, " +
+        "In Portfolio Insight Copilot, the estimator is a labeled fallback for listed symbols " +
+        "that do not have curated live-style demo data. It combines U.S. ticker metadata, " +
         "security type classification, deterministic symbol seeding, and calibration from Tyler's " +
-        "Stock Market Simulation export, including benchmark movement and volatility context. It " +
-        "is not pretending to be a live quote feed: the app labels these as simulation-backed " +
-        "estimates so a reviewer can see the data quality and provenance.",
+        "Stock Market Simulation export. The point is to be clear about the data source instead " +
+        "of pretending every ticker has a live quote feed.",
     },
     {
       keywords: ["market", "simulator", "simulation", "stock", "trading", "trade",
         "quant", "finance", "financial", "sharpe", "validation", "firewall", "sim",
         "order book", "market simulator", "stock market"],
       answer:
-        "His flagship project is an <strong>agent-based stock market simulator</strong>: " +
-        "prices emerge from thousands of competing trading agents on a real order book. " +
-        "He paired it with a statistical validation firewall (Deflated Sharpe Ratio, " +
-        "walk-forward testing, realistic costs) that honestly tests strategies - it found " +
-        "no reliable directional edge across eight strategy families, but showed volatility " +
-        "is forecastable. That simulator now also calibrates the Portfolio Insight Copilot's " +
-        "benchmark and listed-symbol estimates, so the AI demo is not relying on unexplained " +
-        "mock values. Pure Python, ~350 tests. " +
+        "Tyler built an <strong>agent-based stock market simulator</strong> where prices come " +
+        "from thousands of trading agents interacting through an order book. He added a validation " +
+        "layer with Deflated Sharpe Ratio, walk-forward testing, and realistic costs to check " +
+        "whether strategies actually had edge. Most directional strategies did not hold up, which " +
+        "was the honest result; volatility forecasting was the useful signal. Pure Python, " +
+        "~350 tests. " +
         ext(L.demo, "Live demo") + " · " + ext(L.repo, "Code") + ".",
     },
     {
@@ -78,12 +75,11 @@
         "portfolio builder", "builder", "holdings", "risk", "risk score",
         "demo guide", "prompt packet", "guardrails", "portfolio"],
       answer:
-        "Tyler built an <strong>AI Portfolio Insight Copilot</strong>: a no-cost static fintech " +
-        "AI demo where users can build a portfolio, add/edit/delete holdings, search a broad " +
-        "U.S. listed ticker universe, compare against SPY/QQQ/SCHD, and run an AI risk review " +
-        "with transparent scoring factors. It uses citation-backed context, non-advisory " +
-        "guardrails, simulation-backed estimates for less-prominent listed symbols, and an " +
-        "optional prompt-packet view for technical walkthroughs. " +
+        "Tyler built an <strong>AI Portfolio Insight Copilot</strong> to show how an AI finance " +
+        "tool can be useful without pretending to be a financial advisor. Users can build a " +
+        "portfolio, add or edit holdings, search a broad U.S. ticker universe, compare against " +
+        "SPY/QQQ/SCHD, and run an AI risk review with clear scoring factors. It labels " +
+        "simulation-backed estimates for less-prominent listed symbols. " +
         ext(L.copilotDemo, "Live demo") + " · " + ext(L.copilotRepo, "Code") + ".",
     },
     {
@@ -92,13 +88,11 @@
         "articles", "article", "rss", "real articles", "linucb", "thompson",
         "exploration", "exploitation", "search recommendations", "social media"],
       answer:
-        "Tyler built <strong>BanditFeed</strong>, a recommendation-system demo that ranks " +
-        "real RSS articles with contextual bandit algorithms. Users tune interests, get a " +
-        "personalized feed with predicted ranking badges and match scores, open the original " +
-        "articles, and watch clicks update the model's beliefs. It includes a \"Why?\" explainer " +
-        "that connects exploration/exploitation to the recommendation loops behind social feeds, " +
-        "search, and content platforms. Tech: FastAPI, vanilla JavaScript, LinUCB-style scoring, " +
-        "and real article metadata. " +
+        "Tyler built <strong>BanditFeed</strong>, a recommender demo that makes the learning loop " +
+        "visible. It ranks real RSS articles with contextual bandit algorithms, shows match scores " +
+        "and ranking reasons, links to the original articles, and updates its beliefs as users " +
+        "click or skip items. The \"Why?\" section connects the demo to feeds, search, and content " +
+        "ranking systems. Tech: FastAPI, vanilla JavaScript, LinUCB-style scoring, and real article metadata. " +
         ext(L.banditDemo, "Live demo") + " · " + ext(L.banditRepo, "Code") + ".",
     },
     {
@@ -115,26 +109,24 @@
         "light puzzle", "optics", "reflection", "prism", "sandbox", "custom level",
         "cs 4620", "webgl"],
       answer:
-        "Tyler built <strong>Photon Forge</strong>, a browser-based 3D ray-traced " +
-        "light puzzle game. Players drag optics onto a Three.js board, rotate the " +
-        "camera, move misplaced components, solve reflection/color-routing puzzles, " +
-        "and use a sandbox builder to create custom levels with draggable sources, " +
-        "targets, and walls. Technically it demonstrates ray-segment intersections, " +
-        "reflection vectors, spectral dispersion, color filtering, height-layer beam " +
-        "routing, perspective camera controls, and polished UI state. " +
+        "Tyler built <strong>Photon Forge</strong>, a 3D light puzzle game that makes " +
+        "computer graphics concepts playable. Players drag optics onto a Three.js board, " +
+        "rotate the camera, solve reflection and color-routing puzzles, and build custom " +
+        "levels with sources, targets, and walls. Under the hood it uses ray-segment " +
+        "intersections, reflection vectors, color filtering, height-layer beam routing, " +
+        "and camera controls. " +
         ext(L.photonDemo, "Live demo") + " · " + ext(L.photonRepo, "Code") + ".",
     },
     {
       keywords: ["project", "projects", "built", "build", "made", "work", "works",
         "portfolio", "showcase", "what has", "everything"],
       answer:
-        "Tyler's projects span <strong>BanditFeed</strong>, a real-article recommendation " +
-        "demo using contextual bandits; <strong>Photon Forge</strong>, a 3D ray-traced " +
-        "light puzzle with a sandbox level builder; an <strong>AI Portfolio Insight " +
-        "Copilot</strong> with portfolio building, simulation-backed ticker estimates, " +
-        "benchmark comparison, citation-backed reasoning, and AI guardrails; plus an " +
-        "<strong>agent-based stock market simulator</strong> with a statistical validation " +
-        "firewall. He also built <strong>Ripple</strong>, a wave-interference puzzle game. " +
+        "Tyler's projects include <strong>BanditFeed</strong>, a real-article recommendation " +
+        "demo using contextual bandits; <strong>Photon Forge</strong>, a 3D light puzzle " +
+        "with a sandbox level builder; an <strong>AI Portfolio Insight Copilot</strong> " +
+        "with portfolio building, ticker estimates, benchmark comparison, and AI guardrails; " +
+        "and an <strong>agent-based stock market simulator</strong> with a validation layer. " +
+        "He also built <strong>Ripple</strong>, a wave-interference puzzle game. " +
         "Want details on any?",
       chips: ["Tell me about BanditFeed", "Tell me about Photon Forge", "What's the AI copilot?"],
     },
@@ -155,7 +147,7 @@
         "employment", "seeking", "open to", "looking for"],
       answer:
         "Tyler is <strong>open to software engineering roles</strong> and graduates in " +
-        "May 2026. The fastest way to reach him is email — want his contact info?",
+        "December 2026. The fastest way to reach him is email. Want his contact info?",
       chips: ["How do I contact him?", "What tech does he use?"],
     },
     {
@@ -173,17 +165,16 @@
         "student"],
       answer:
         "He studies <strong>Computer Science at Cornell University</strong>'s College of " +
-        "Engineering, with a minor in Business, graduating <strong>May 2026</strong>.",
+        "Engineering, with a minor in Business, graduating <strong>December 2026</strong>.",
     },
     {
       keywords: ["who", "about", "yourself", "background", "bio", "intro", "introduce",
         "summary"],
       answer:
         "<strong>Tyler Forstrom</strong> is a computer science student at Cornell " +
-        "(graduating May 2026, business minor). He likes building things end to end and " +
-        "cares about whether they actually work — so he tests heavily and tries not to " +
-        "oversell results. He's interned as an app developer at Kahua and co-founded an " +
-        "investing club at Cornell.",
+        "(graduating December 2026, business minor). He likes building things end to end " +
+        "and cares about whether they actually work. He's interned as an app developer " +
+        "at Kahua and co-founded an investing club at Cornell.",
     },
     {
       keywords: ["location", "where", "based", "live", "lives", "from", "relocate",
@@ -218,7 +209,7 @@
   ];
 
   const FALLBACK =
-    "I'm not totally sure about that one — I'm a small bot that sticks to what it knows. " +
+    "I'm not totally sure about that one. I'm a small bot that sticks to what it knows. " +
     "I can tell you about Tyler's projects, his skills, what he's looking for, or how to reach him.";
 
   function normalize(s) {

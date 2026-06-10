@@ -29,16 +29,18 @@
     rippleRepo: "https://github.com/TylerJForstrom/Ripple",
     banditDemo: "https://banditfeed.netlify.app",
     banditRepo: "https://github.com/TylerJForstrom/BanditFeed",
+    plainDemo: "https://plaincodinglanguage.netlify.app",
+    plainRepo: "https://github.com/TylerJForstrom/Plain",
   };
   const ext = (href, text) =>
     `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
 
   const SUGGESTIONS = [
     "What has Tyler built?",
+    "Tell me about the Plain language",
     "Tell me about BanditFeed",
     "Tell me about Photon Forge",
     "Tell me about the AI copilot",
-    "How does the estimator work?",
     "What tech does he use?",
     "How do I contact him?",
   ];
@@ -96,6 +98,21 @@
         ext(L.banditDemo, "Live demo") + " · " + ext(L.banditRepo, "Code") + ".",
     },
     {
+      keywords: ["plain", "plain language", "programming language", "coding language",
+        "own language", "made a language", "built a language", "interpreter", "compiler",
+        "parser", "tokenizer", "english", "reads like english", "leetcode", "playground",
+        "learn to code", "beginner", "beginners", "teaching", "pyodide", "syntax"],
+      answer:
+        "Tyler designed and built <strong>Plain</strong>, a programming language that reads " +
+        "like English — a complete tokenizer, parser, and interpreter written from scratch in " +
+        "pure Python. It sits between block coding and Python: real typed-out programs in " +
+        "everyday words, friendly line-numbered errors, and a trace mode that narrates code " +
+        "as it runs. It's expressive enough to solve real interview problems (the repo has 16 " +
+        "solved LeetCode problems), and the demo site runs the actual interpreter in your " +
+        "browser with a playground, practice problems, and searchable docs. " +
+        ext(L.plainDemo, "Live demo") + " · " + ext(L.plainRepo, "Code") + ".",
+    },
+    {
       keywords: ["game", "games", "ripple", "puzzle", "play", "wave", "interference", "arcade"],
       answer:
         "Tyler has two browser games/demos: <strong>Photon Forge</strong>, a 3D " +
@@ -121,14 +138,16 @@
       keywords: ["project", "projects", "built", "build", "made", "work", "works",
         "portfolio", "showcase", "what has", "everything"],
       answer:
-        "Tyler's projects include <strong>BanditFeed</strong>, a real-article recommendation " +
-        "demo using contextual bandits; <strong>Photon Forge</strong>, a 3D light puzzle " +
-        "with a sandbox level builder; an <strong>AI Portfolio Insight Copilot</strong> " +
-        "with portfolio building, ticker estimates, benchmark comparison, and AI guardrails; " +
-        "and an <strong>agent-based stock market simulator</strong> with a validation layer. " +
+        "Tyler's projects include <strong>Plain</strong>, a programming language that reads " +
+        "like English (interpreter built from scratch, with an in-browser playground); " +
+        "<strong>BanditFeed</strong>, a real-article recommendation demo using contextual " +
+        "bandits; <strong>Photon Forge</strong>, a 3D light puzzle with a sandbox level " +
+        "builder; an <strong>AI Portfolio Insight Copilot</strong> with portfolio building, " +
+        "ticker estimates, benchmark comparison, and AI guardrails; and an " +
+        "<strong>agent-based stock market simulator</strong> with a validation layer. " +
         "He also built <strong>Ripple</strong>, a wave-interference puzzle game. " +
         "Want details on any?",
-      chips: ["Tell me about BanditFeed", "Tell me about Photon Forge", "What's the AI copilot?"],
+      chips: ["Tell me about the Plain language", "Tell me about BanditFeed", "What's the AI copilot?"],
     },
     {
       keywords: ["skill", "skills", "tech", "stack", "language", "languages", "tools",
@@ -193,10 +212,11 @@
     {
       keywords: ["help", "options", "suggestions", "topics", "menu", "what can", "ask you"],
       answer:
-        "I can tell you about Tyler's background, his projects (BanditFeed, an AI Portfolio " +
-        "Insight Copilot with portfolio building and simulation-backed estimates, an " +
-        "agent-based stock market simulator, Photon Forge, and the Ripple puzzle game), " +
-        "the tech he uses, what he's looking for, or how to contact him. What would you like to know?",
+        "I can tell you about Tyler's background, his projects (Plain — his own programming " +
+        "language, BanditFeed, an AI Portfolio Insight Copilot with portfolio building and " +
+        "simulation-backed estimates, an agent-based stock market simulator, Photon Forge, " +
+        "and the Ripple puzzle game), the tech he uses, what he's looking for, or how to " +
+        "contact him. What would you like to know?",
     },
     {
       keywords: ["thanks", "thank", "ty", "appreciate", "thx", "cheers"],

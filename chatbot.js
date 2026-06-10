@@ -31,22 +31,42 @@
     banditRepo: "https://github.com/TylerJForstrom/BanditFeed",
     plainDemo: "https://plaincodinglanguage.netlify.app",
     plainRepo: "https://github.com/TylerJForstrom/Plain",
+    nycDemo: "https://nycrealestatemap.netlify.app",
+    nycRepo: "https://github.com/TylerJForstrom/NYCRealEstateMap",
   };
   const ext = (href, text) =>
     `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
 
   const SUGGESTIONS = [
     "What has Tyler built?",
+    "Tell me about the NYC real estate map",
     "Tell me about the Plain language",
     "Tell me about BanditFeed",
     "Tell me about Photon Forge",
-    "Tell me about the AI copilot",
     "What tech does he use?",
     "How do I contact him?",
   ];
 
   // Knowledge base. Earlier entries win ties; multi-word keywords score higher.
   const KB = [
+    {
+      keywords: ["real estate", "realestate", "nyc", "housing", "house prices",
+        "property", "properties", "home prices", "zillow", "map", "maps", "mapping",
+        "postgis", "geospatial", "gis", "open data", "neighborhood", "neighborhoods",
+        "brooklyn", "manhattan", "queens", "repeat sales", "heatmap", "choropleth",
+        "maplibre", "mapbox", "where to buy", "nyc real estate", "real estate map"],
+      answer:
+        "Tyler built the <strong>NYC Real Estate Map</strong>, a full-stack market " +
+        "analytics platform on 338k recorded property sales from NYC Open Data (real " +
+        "deeds, not scraped listings). It has an interactive map with clustered sale " +
+        "markers, a price heatmap, and neighborhood choropleths, plus a Market Insights " +
+        "tab built for the where-to-buy question: repeat-sales returns from the same " +
+        "property selling twice, price-vs-momentum quadrants, liquidity, and seasonality. " +
+        "Stack: FastAPI, PostgreSQL/PostGIS (all geospatial queries in the database), " +
+        "React + TypeScript, MapLibre GL, and a daily ingest pipeline with dedupe and " +
+        "outlier detection. The live demo serves a real 25k-sale snapshot. " +
+        ext(L.nycDemo, "Live demo") + " · " + ext(L.nycRepo, "Code") + ".",
+    },
     {
       keywords: ["estimator", "estimate", "estimates", "estimated", "simulation-backed",
         "simulation backed", "mock data", "market data", "less prominent", "ticker",
@@ -138,7 +158,9 @@
       keywords: ["project", "projects", "built", "build", "made", "work", "works",
         "portfolio", "showcase", "what has", "everything"],
       answer:
-        "Tyler's projects include <strong>Plain</strong>, a programming language that reads " +
+        "Tyler's projects include the <strong>NYC Real Estate Map</strong>, a full-stack " +
+        "market analytics platform over 338k real NYC property sales (FastAPI + PostGIS + " +
+        "React/MapLibre); <strong>Plain</strong>, a programming language that reads " +
         "like English (interpreter built from scratch, with an in-browser playground); " +
         "<strong>BanditFeed</strong>, a real-article recommendation demo using contextual " +
         "bandits; <strong>Photon Forge</strong>, a 3D light puzzle with a sandbox level " +
@@ -147,7 +169,7 @@
         "<strong>agent-based stock market simulator</strong> with a validation layer. " +
         "He also built <strong>Ripple</strong>, a wave-interference puzzle game. " +
         "Want details on any?",
-      chips: ["Tell me about the Plain language", "Tell me about BanditFeed", "What's the AI copilot?"],
+      chips: ["Tell me about the NYC real estate map", "Tell me about the Plain language", "Tell me about BanditFeed"],
     },
     {
       keywords: ["skill", "skills", "tech", "stack", "language", "languages", "tools",
@@ -156,9 +178,11 @@
       answer:
         "Tyler works in <strong>Python, Java, C, OCaml, and SQL</strong>, with " +
         "<strong>PyTorch</strong> and <strong>TensorFlow</strong> for ML, plus " +
-        "JavaScript / HTML / CSS, <strong>FastAPI</strong>, <strong>Three.js/WebGL</strong>, " +
-        "and Git. He's comfortable across ML, recommendation systems, simulation, computer " +
-        "graphics, and web.",
+        "JavaScript / <strong>TypeScript &amp; React</strong>, HTML / CSS, " +
+        "<strong>FastAPI</strong>, <strong>PostgreSQL/PostGIS</strong>, " +
+        "<strong>Three.js/WebGL</strong>, and Git. He's comfortable across ML, " +
+        "recommendation systems, data engineering and geospatial work, simulation, " +
+        "computer graphics, and web.",
     },
     {
       keywords: ["looking", "hiring", "hire", "job", "jobs", "role", "roles",
@@ -212,11 +236,11 @@
     {
       keywords: ["help", "options", "suggestions", "topics", "menu", "what can", "ask you"],
       answer:
-        "I can tell you about Tyler's background, his projects (Plain — his own programming " +
-        "language, BanditFeed, an AI Portfolio Insight Copilot with portfolio building and " +
-        "simulation-backed estimates, an agent-based stock market simulator, Photon Forge, " +
-        "and the Ripple puzzle game), the tech he uses, what he's looking for, or how to " +
-        "contact him. What would you like to know?",
+        "I can tell you about Tyler's background, his projects (the NYC Real Estate Map, " +
+        "Plain — his own programming language, BanditFeed, an AI Portfolio Insight Copilot " +
+        "with portfolio building and simulation-backed estimates, an agent-based stock " +
+        "market simulator, Photon Forge, and the Ripple puzzle game), the tech he uses, " +
+        "what he's looking for, or how to contact him. What would you like to know?",
     },
     {
       keywords: ["thanks", "thank", "ty", "appreciate", "thx", "cheers"],

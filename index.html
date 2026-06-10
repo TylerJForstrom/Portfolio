@@ -8,14 +8,14 @@
     <title>Tyler Forstrom | Software Engineer</title>
     <meta
       name="description"
-      content="Tyler Forstrom, software engineer and Cornell CS student building practical AI, simulation, graphics, and web projects."
+      content="Tyler Forstrom, software engineer and Cornell CS student building practical AI, data, simulation, graphics, and web projects."
     />
     <!-- Nice link previews when you share the URL (LinkedIn, texts, etc.) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tyler Forstrom | Software Engineer" />
     <meta
       property="og:description"
-      content="Software engineering projects in AI, simulation, graphics, and web development."
+      content="Software engineering projects in AI, data platforms, simulation, graphics, and web development."
     />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -51,9 +51,9 @@
           <p class="intro">
             I'm a Cornell computer science student focused on projects where the
             engineering and the user experience both matter: AI tools, market
-            simulations, graphics demos, and clean web apps. I care about making
-            things that actually work, not just things that look good in a
-            screenshot.
+            simulations, data platforms, graphics demos, and clean web apps. I care
+            about making things that actually work, not just things that look good
+            in a screenshot.
           </p>
           <div class="cta-row">
             <a class="btn" href="#work">View my work ↓</a>
@@ -91,6 +91,33 @@
         <h2 class="section-title">Selected work</h2>
 
         <div class="work-grid">
+          <!-- NYC Real Estate Map -->
+          <article class="project reveal">
+            <h3>NYC Real Estate Map: market analytics on 338k real sales</h3>
+            <p class="project-blurb">
+              A full-stack market analytics platform built on recorded NYC property sales
+              from NYC Open Data — real prices and dates, no scraped listings. An
+              interactive map clusters tens of thousands of sales with heatmap and
+              neighborhood choropleth layers, and a Market Insights tab answers the
+              buyer's question directly: repeat-sales returns computed from the same
+              property selling twice, price-vs-momentum quadrants, liquidity shifts, and
+              seasonality. All geospatial queries run in PostGIS, and a daily pipeline
+              dedupes records, flags $10 deed transfers, and catches outliers with robust
+              statistics. The demo serves a real 25k-sale snapshot of the full system.
+            </p>
+            <ul class="tags">
+              <li>FastAPI</li>
+              <li>PostgreSQL / PostGIS</li>
+              <li>React + TypeScript</li>
+              <li>MapLibre GL</li>
+              <li>Data engineering</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://nycrealestatemap.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+              <a href="https://github.com/TylerJForstrom/NYCRealEstateMap" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </article>
+
           <!-- Plain programming language -->
           <article class="project reveal">
             <h3>Plain: a programming language that reads like English</h3>
@@ -270,9 +297,12 @@
           <li>C</li>
           <li>OCaml</li>
           <li>SQL</li>
+          <li>PostgreSQL / PostGIS</li>
           <li>PyTorch</li>
           <li>TensorFlow</li>
           <li>JavaScript</li>
+          <li>TypeScript &amp; React</li>
+          <li>FastAPI</li>
           <li>HTML &amp; CSS</li>
           <li>Git</li>
         </ul>

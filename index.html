@@ -91,6 +91,33 @@
         <h2 class="section-title">Selected work</h2>
 
         <div class="work-grid">
+          <!-- TickerPulse -->
+          <article class="project reveal">
+            <h3>TickerPulse: social sentiment &amp; trend radar for the stock market</h3>
+            <p class="project-blurb">
+              A trend-spotting platform that ingests public chatter from Reddit,
+              StockTwits, Bluesky, and Hacker News, extracts tickers with junk-proof
+              cashtag and company-name matching, scores every post with finance-tuned
+              sentiment, and clusters the conversation into themes with embeddings and
+              HDBSCAN. The dashboard ranks trending tickers by volume, velocity, and
+              breakout score, flags unusual spikes, maps the topic landscape in 2-D, and
+              overlays social buzz on real price data with a lead/lag readout — does the
+              chatter predict the move, or chase it? A GitHub Actions cron keeps it
+              near-live for free; demo mode runs entirely on a bundled snapshot.
+            </p>
+            <ul class="tags">
+              <li>Python NLP pipeline</li>
+              <li>FinBERT sentiment</li>
+              <li>React + Recharts</li>
+              <li>Netlify Functions</li>
+              <li>Time-series analytics</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://tickerpulse-demo.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+              <a href="https://github.com/TylerJForstrom/TickerPulse" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </article>
+
           <!-- NYC Real Estate Map -->
           <article class="project reveal">
             <h3>NYC Real Estate Map: market analytics on 338k real sales</h3>

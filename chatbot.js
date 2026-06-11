@@ -33,12 +33,15 @@
     plainRepo: "https://github.com/TylerJForstrom/Plain",
     nycDemo: "https://nycrealestatemap.netlify.app",
     nycRepo: "https://github.com/TylerJForstrom/NYCRealEstateMap",
+    pulseDemo: "https://tickerpulse-demo.netlify.app",
+    pulseRepo: "https://github.com/TylerJForstrom/TickerPulse",
   };
   const ext = (href, text) =>
     `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
 
   const SUGGESTIONS = [
     "What has Tyler built?",
+    "Tell me about TickerPulse",
     "Tell me about the NYC real estate map",
     "Tell me about the Plain language",
     "Tell me about BanditFeed",
@@ -49,6 +52,24 @@
 
   // Knowledge base. Earlier entries win ties; multi-word keywords score higher.
   const KB = [
+    {
+      keywords: ["tickerpulse", "ticker pulse", "sentiment", "social sentiment",
+        "trend radar", "trending tickers", "trending", "wallstreetbets", "wsb",
+        "reddit", "stocktwits", "bluesky", "finbert", "buzz", "meme stocks",
+        "meme stock", "social media stocks", "chatter", "velocity", "breakout",
+        "topic map", "topic clustering", "lead lag", "hype", "what's hot"],
+      answer:
+        "Tyler built <strong>TickerPulse</strong>, a social sentiment & trend radar for the " +
+        "stock market. A Python pipeline ingests public chatter from Reddit, StockTwits, " +
+        "Bluesky, and Hacker News, extracts tickers (cashtags + a curated dictionary + " +
+        "company-name matching with junk disambiguation), scores each post with " +
+        "finance-tuned FinBERT sentiment, and clusters themes with embeddings + HDBSCAN. " +
+        "The dashboard ranks trending tickers by volume, velocity, and breakout score, " +
+        "flags unusual spikes, and overlays social buzz on real price data with a lead/lag " +
+        "correlation readout — does chatter predict the move or chase it? It runs free: " +
+        "GitHub Actions cron + Supabase + Netlify. " +
+        ext(L.pulseDemo, "Live demo") + " · " + ext(L.pulseRepo, "Code") + ".",
+    },
     {
       keywords: ["real estate", "realestate", "nyc", "housing", "house prices",
         "property", "properties", "home prices", "zillow", "map", "maps", "mapping",
@@ -158,7 +179,9 @@
       keywords: ["project", "projects", "built", "build", "made", "work", "works",
         "portfolio", "showcase", "what has", "everything"],
       answer:
-        "Tyler's projects include the <strong>NYC Real Estate Map</strong>, a full-stack " +
+        "Tyler's projects include <strong>TickerPulse</strong>, a social sentiment & trend " +
+        "radar for the stock market (Python NLP pipeline, FinBERT, React dashboard with " +
+        "buzz-vs-price correlation); the <strong>NYC Real Estate Map</strong>, a full-stack " +
         "market analytics platform over 338k real NYC property sales (FastAPI + PostGIS + " +
         "React/MapLibre); <strong>Plain</strong>, a programming language that reads " +
         "like English (interpreter built from scratch, with an in-browser playground); " +
@@ -236,7 +259,8 @@
     {
       keywords: ["help", "options", "suggestions", "topics", "menu", "what can", "ask you"],
       answer:
-        "I can tell you about Tyler's background, his projects (the NYC Real Estate Map, " +
+        "I can tell you about Tyler's background, his projects (TickerPulse — a social " +
+        "sentiment & trend radar for stocks, the NYC Real Estate Map, " +
         "Plain — his own programming language, BanditFeed, an AI Portfolio Insight Copilot " +
         "with portfolio building and simulation-backed estimates, an agent-based stock " +
         "market simulator, Photon Forge, and the Ripple puzzle game), the tech he uses, " +

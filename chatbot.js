@@ -277,8 +277,9 @@
   ];
 
   const FALLBACK =
-    "I'm not totally sure about that one. I'm a small bot that sticks to what it knows. " +
-    "I can tell you about Tyler's projects, his skills, what he's looking for, or how to reach him.";
+    "Hmm, that one's outside what I know — I'm a small bot that sticks to the facts " +
+    "I was given rather than guessing. I can tell you about Tyler's projects, his " +
+    "skills, what he's looking for, or how to reach him.";
 
   function normalize(s) {
     return s.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
@@ -357,8 +358,8 @@
     if (!greeted) {
       greeted = true;
       addMessage(
-        "Hi! I'm a quick assistant that can answer questions about Tyler and his work. " +
-          "Ask me anything, or tap a suggestion.",
+        "Hi! 👋 I can answer questions about Tyler and his work — what he's built, " +
+          "the tech he uses, or how to get in touch. Ask away, or tap a suggestion.",
         "bot",
         false,
       );

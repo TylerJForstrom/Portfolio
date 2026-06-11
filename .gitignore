@@ -4,6 +4,7 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+.claude/
 
 # dependencies (none needed, but just in case)
 node_modules/

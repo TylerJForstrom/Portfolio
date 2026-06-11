@@ -8,14 +8,14 @@
     <title>Tyler Forstrom | Software Engineer</title>
     <meta
       name="description"
-      content="Tyler Forstrom, software engineer and Cornell CS student building practical AI, data, simulation, graphics, and web projects."
+      content="Tyler Forstrom, software engineer and Cornell CS student. AI, data, market simulation, graphics, and web projects — all with live demos you can try."
     />
     <!-- Nice link previews when you share the URL (LinkedIn, texts, etc.) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tyler Forstrom | Software Engineer" />
     <meta
       property="og:description"
-      content="Software engineering projects in AI, data platforms, simulation, graphics, and web development."
+      content="Software engineering projects in AI, data platforms, simulation, graphics, and web development — all with live demos."
     />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -27,7 +27,7 @@
     <header class="nav">
       <a class="nav-name" href="#top">Tyler Forstrom</a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#work">Work</a>
+        <a href="#work">Projects</a>
         <a href="#games">Games</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -45,18 +45,18 @@
           <p class="eyebrow">Software Engineer</p>
           <h1>Tyler Forstrom</h1>
           <p class="tagline">
-            I like building useful software that is easy to try, easy to explain,
-            and honest about its limits.
+            I build software that's easy to try, easy to explain, and honest
+            about its limits.
           </p>
           <p class="intro">
-            I'm a Cornell computer science student focused on projects where the
-            engineering and the user experience both matter: AI tools, market
-            simulations, data platforms, graphics demos, and clean web apps. I care
-            about making things that actually work, not just things that look good
-            in a screenshot.
+            I'm a computer science student at Cornell, and most of my projects
+            start with a question I can't let go of. Does Reddit hype actually
+            predict stock moves? What would code look like if it read like plain
+            English? I'd rather build the real thing and find out than settle
+            for something that only looks good in a screenshot.
           </p>
           <div class="cta-row">
-            <a class="btn" href="#work">View my work ↓</a>
+            <a class="btn" href="#work">See what I've built ↓</a>
             <a
               class="btn btn-ghost"
               href="https://github.com/TylerJForstrom"
@@ -86,236 +86,283 @@
         </div>
       </section>
 
-      <!-- WORK -->
+      <!-- PROJECTS -->
       <section id="work" class="section">
-        <h2 class="section-title">Selected work</h2>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-note">
+          Everything here is live — every project has a demo you can actually
+          click around in. Search below, or filter by topic.
+        </p>
 
-        <div class="work-grid">
-          <!-- TickerPulse -->
-          <article class="project reveal">
-            <h3>TickerPulse: social sentiment &amp; trend radar for the stock market</h3>
-            <p class="project-blurb">
-              A trend-spotting platform that ingests public chatter from Reddit,
-              StockTwits, Bluesky, and Hacker News, extracts tickers with junk-proof
-              cashtag and company-name matching, scores every post with finance-tuned
-              sentiment, and clusters the conversation into themes with embeddings and
-              HDBSCAN. The dashboard ranks trending tickers by volume, velocity, and
-              breakout score, flags unusual spikes, maps the topic landscape in 2-D, and
-              overlays social buzz on real price data with a lead/lag readout — does the
-              chatter predict the move, or chase it? A GitHub Actions cron keeps it
-              near-live for free; demo mode runs entirely on a bundled snapshot.
-            </p>
-            <ul class="tags">
-              <li>Python NLP pipeline</li>
-              <li>FinBERT sentiment</li>
-              <li>React + Recharts</li>
-              <li>Netlify Functions</li>
-              <li>Time-series analytics</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://tickerpulse-demo.netlify.app" target="_blank" rel="noopener">Live demo →</a>
-              <a href="https://github.com/TylerJForstrom/TickerPulse" target="_blank" rel="noopener">Code →</a>
-            </div>
-          </article>
-
-          <!-- NYC Real Estate Map -->
-          <article class="project reveal">
-            <h3>NYC Real Estate Map: market analytics on 338k real sales</h3>
-            <p class="project-blurb">
-              A full-stack market analytics platform built on recorded NYC property sales
-              from NYC Open Data — real prices and dates, no scraped listings. An
-              interactive map clusters tens of thousands of sales with heatmap and
-              neighborhood choropleth layers, and a Market Insights tab answers the
-              buyer's question directly: repeat-sales returns computed from the same
-              property selling twice, price-vs-momentum quadrants, liquidity shifts, and
-              seasonality. All geospatial queries run in PostGIS, and a daily pipeline
-              dedupes records, flags $10 deed transfers, and catches outliers with robust
-              statistics. The demo serves a real 25k-sale snapshot of the full system.
-            </p>
-            <ul class="tags">
-              <li>FastAPI</li>
-              <li>PostgreSQL / PostGIS</li>
-              <li>React + TypeScript</li>
-              <li>MapLibre GL</li>
-              <li>Data engineering</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://nycrealestatemap.netlify.app" target="_blank" rel="noopener">Live demo →</a>
-              <a href="https://github.com/TylerJForstrom/NYCRealEstateMap" target="_blank" rel="noopener">Code →</a>
-            </div>
-          </article>
-
-          <!-- Plain programming language -->
-          <article class="project reveal">
-            <h3>Plain: a programming language that reads like English</h3>
-            <p class="project-blurb">
-              A complete programming language and interpreter built from scratch in pure
-              Python — tokenizer, parser, and runtime. Plain sits between block coding and
-              Python: real typed-out programs in words you already know, with friendly
-              line-numbered errors and a trace mode that narrates code as it runs. The goal
-              is that someone new to coding can solve real interview problems with it; the
-              repo includes 16 solved LeetCode problems written in Plain. The demo site runs
-              the actual interpreter in your browser, with practice problems, searchable
-              docs, and a docs assistant.
-            </p>
-            <ul class="tags">
-              <li>Python</li>
-              <li>Language design</li>
-              <li>Interpreters</li>
-              <li>WebAssembly (Pyodide)</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://plaincodinglanguage.netlify.app" target="_blank" rel="noopener">Live demo →</a>
-              <a href="https://github.com/TylerJForstrom/Plain" target="_blank" rel="noopener">Code →</a>
-            </div>
-          </article>
-
-          <!-- Portfolio Insight Copilot -->
-          <article class="project reveal">
-            <h3>Portfolio Insight Copilot</h3>
-            <p class="project-blurb">
-              A portfolio analysis demo built around a simple question: how do you make an AI
-              finance tool feel useful without pretending it is a financial advisor? Users can
-              build a portfolio, add or edit holdings, search a broad U.S. ticker universe,
-              compare against SPY, QQQ, and SCHD, and run an AI risk review with clear scoring
-              factors. For less-prominent symbols, the app labels simulation-backed estimates
-              instead of hiding the data quality.
-            </p>
-            <ul class="tags">
-              <li>JavaScript</li>
-              <li>Fintech AI</li>
-              <li>Simulation-backed data</li>
-              <li>AI guardrails</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://portfolio-insight-tyler.netlify.app" target="_blank" rel="noopener">Live demo →</a>
-              <a href="https://github.com/TylerJForstrom/Portfolio-Insight-Copilot" target="_blank" rel="noopener">Code →</a>
-            </div>
-          </article>
-
-          <!-- BanditFeed -->
-          <article class="project reveal">
-            <h3>BanditFeed</h3>
-            <p class="project-blurb">
-              A hands-on recommender demo that makes the learning loop visible. BanditFeed ranks
-              real RSS articles with contextual bandit algorithms, shows why each article was
-              recommended, and updates its beliefs as users click or skip items. It is meant to
-              make the same explore-vs-recommend tradeoff behind feeds, search, and content apps
-              feel concrete instead of abstract.
-            </p>
-            <ul class="tags">
-              <li>FastAPI</li>
-              <li>Recommendation systems</li>
-              <li>Contextual bandits</li>
-              <li>Real article data</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://banditfeed.netlify.app" target="_blank" rel="noopener">Live demo &rarr;</a>
-              <a href="https://github.com/TylerJForstrom/BanditFeed" target="_blank" rel="noopener">Code &rarr;</a>
-            </div>
-          </article>
-
-          <!-- Flagship project: the market sim we built -->
-          <article class="project reveal">
-            <h3>Agent-Based Market Simulator &amp; Strategy Validation Firewall</h3>
-            <p class="project-blurb">
-              A stock market simulation built from the ground up, where prices come from
-              thousands of trader-agents interacting through an order book. I paired it with a
-              statistical validation layer to test whether strategies actually had edge after
-              costs and walk-forward testing. Most directional strategies failed, which was the
-              honest result; volatility forecasting was the useful signal that held up. The
-              simulator also provides calibration data for Portfolio Insight Copilot.
-            </p>
-            <ul class="tags">
-              <li>Python</li>
-              <li>Simulation</li>
-              <li>Applied statistics</li>
-              <li>Data engine</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://stockmarketsimtyler.netlify.app"
-                target="_blank"
-                rel="noopener"
-                >Live demo →</a
-              >
-              <a
-                href="https://github.com/TylerJForstrom/Stock-Market-Sim"
-                target="_blank"
-                rel="noopener"
-                >Code →</a
-              >
-            </div>
-          </article>
+        <div class="filter-bar">
+          <input
+            id="project-search"
+            class="project-search"
+            type="search"
+            placeholder="Search projects — try &quot;AI&quot;, &quot;maps&quot;, &quot;puzzle&quot;…"
+            aria-label="Search projects"
+            autocomplete="off"
+          />
+          <div class="filter-chips" role="group" aria-label="Filter projects by topic">
+            <button type="button" class="filter-chip active" data-topic="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-chip" data-topic="ai" aria-pressed="false">AI &amp; machine learning</button>
+            <button type="button" class="filter-chip" data-topic="finance" aria-pressed="false">Finance &amp; markets</button>
+            <button type="button" class="filter-chip" data-topic="data" aria-pressed="false">Data &amp; maps</button>
+            <button type="button" class="filter-chip" data-topic="languages" aria-pressed="false">Languages &amp; tools</button>
+            <button type="button" class="filter-chip" data-topic="games" aria-pressed="false">Games &amp; graphics</button>
+          </div>
         </div>
-      </section>
 
-      <!-- GAMES -->
-      <section id="games" class="section">
-        <h2 class="section-title">Games</h2>
-        <div class="work-grid">
-          <!-- Photon Forge -->
-          <article class="project reveal">
-            <h3>Photon Forge</h3>
-            <p class="project-blurb">
-              A 3D light puzzle game built to make computer graphics concepts playable. Players
-              drag mirrors, prisms, filters, sources, targets, and walls onto a Three.js board,
-              then solve puzzles by routing beams through the scene. Under the hood it uses
-              ray-segment intersections, reflection vectors, color filtering, height-layer beam
-              routing, and camera controls, but the goal is still simple: make the puzzle feel
-              intuitive.
-            </p>
-            <ul class="tags">
-              <li>JavaScript</li>
-              <li>Three.js</li>
-              <li>Computer graphics</li>
-              <li>3D game UI</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://photonforge.netlify.app" target="_blank" rel="noopener">Live demo &rarr;</a>
-              <a href="https://github.com/TylerJForstrom/Photon-Forge" target="_blank" rel="noopener">Code &rarr;</a>
-            </div>
-          </article>
+        <!-- Finance & markets -->
+        <div class="project-group">
+          <h3 class="group-title">Finance &amp; markets</h3>
+          <div class="work-grid">
+            <!-- TickerPulse -->
+            <article class="project reveal" data-topics="ai finance data">
+              <h3>TickerPulse: a trend radar for stock-market chatter</h3>
+              <p class="project-blurb">
+                This started with a question: when a stock blows up on Reddit, is
+                the internet predicting the move or chasing it? TickerPulse pulls
+                in public chatter from Reddit, StockTwits, Bluesky, and Hacker
+                News, figures out which tickers people are actually talking about
+                (harder than it sounds — "$A" is a real ticker), scores the mood
+                of every post, and groups the conversation into themes. The
+                dashboard ranks what's trending, flags unusual spikes, and lines
+                social buzz up against real price data so you can see who's
+                leading whom. A GitHub Actions cron keeps the whole thing running
+                for free.
+              </p>
+              <ul class="tags">
+                <li>Python NLP pipeline</li>
+                <li>FinBERT sentiment</li>
+                <li>React + Recharts</li>
+                <li>Netlify Functions</li>
+                <li>Time-series analytics</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://tickerpulse-demo.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/TickerPulse" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
 
-          <article class="project reveal">
-            <h3>Ripple: a wave-interference puzzle</h3>
-            <p class="project-blurb">
-              A small browser puzzle about wave interference. Players place emitters so ripples
-              reinforce the targets they want and cancel the ones they do not. It is built with
-              vanilla JavaScript and Canvas, and the levels are generated from known solutions so
-              every puzzle is solvable instead of randomly unfair.
-            </p>
-            <ul class="tags">
-              <li>JavaScript</li>
-              <li>Canvas</li>
-              <li>Wave physics</li>
-              <li>Procedural generation</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://ripple-tyler.netlify.app" target="_blank" rel="noopener">Play →</a>
-              <a href="https://github.com/TylerJForstrom/Ripple" target="_blank" rel="noopener">Code →</a>
-            </div>
-          </article>
+            <!-- Portfolio Insight Copilot -->
+            <article class="project reveal" data-topics="ai finance">
+              <h3>Portfolio Insight Copilot: an AI finance tool that knows its limits</h3>
+              <p class="project-blurb">
+                An experiment in making an AI finance tool that's actually honest.
+                You can build a portfolio, search a broad universe of U.S.
+                tickers, compare against SPY, QQQ, and SCHD, and run an AI risk
+                review that shows you exactly how it scored things instead of
+                hand-waving. And when the app doesn't have great data on a
+                smaller ticker, it says so — estimates are clearly labeled as
+                simulation-backed rather than passed off as live quotes.
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>Fintech AI</li>
+                <li>Simulation-backed data</li>
+                <li>AI guardrails</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://portfolio-insight-tyler.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/Portfolio-Insight-Copilot" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
+
+            <!-- Agent-based market simulator -->
+            <article class="project reveal" data-topics="finance data">
+              <h3>Market Simulator: a stock market grown from thousands of trading bots</h3>
+              <p class="project-blurb">
+                Instead of backtesting against historical prices, I built the
+                market itself: thousands of trader agents placing orders into an
+                order book, with prices emerging from how they interact. Then I
+                added a validation layer to ask the uncomfortable question — do
+                these strategies actually have an edge once you account for costs?
+                Most didn't, and I kept that result instead of burying it.
+                Volatility forecasting was the signal that held up, and the
+                simulator now feeds calibration data to my Portfolio Insight
+                Copilot.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Simulation</li>
+                <li>Applied statistics</li>
+                <li>Data engine</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://stockmarketsimtyler.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/Stock-Market-Sim" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
+          </div>
         </div>
+
+        <!-- Data & machine learning -->
+        <div class="project-group">
+          <h3 class="group-title">Data &amp; machine learning</h3>
+          <div class="work-grid">
+            <!-- NYC Real Estate Map -->
+            <article class="project reveal" data-topics="data">
+              <h3>NYC Real Estate Map: what 338k homes actually sold for</h3>
+              <p class="project-blurb">
+                Most real-estate sites show asking prices. I wanted what homes
+                <em>actually</em> sold for, so I built this on 338,000 recorded
+                sales from NYC Open Data — real deeds, real dates, no scraped
+                listings. There's an interactive map with price heatmaps and
+                neighborhood comparisons, plus a Market Insights tab that answers
+                the questions buyers actually have: which neighborhoods are
+                heating up, which are cooling off, and when in the year prices
+                dip. Behind it, a daily pipeline cleans the data and quietly
+                throws out the $10 "sales" between family members.
+              </p>
+              <ul class="tags">
+                <li>FastAPI</li>
+                <li>PostgreSQL / PostGIS</li>
+                <li>React + TypeScript</li>
+                <li>MapLibre GL</li>
+                <li>Data engineering</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://nycrealestatemap.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/NYCRealEstateMap" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
+
+            <!-- BanditFeed -->
+            <article class="project reveal" data-topics="ai data">
+              <h3>BanditFeed: watch a recommendation algorithm think</h3>
+              <p class="project-blurb">
+                Recommendation algorithms decide what most of us read, but
+                they're invisible. BanditFeed makes one watchable: it ranks real
+                RSS articles using contextual bandits, shows you exactly why each
+                article was recommended, and visibly updates its beliefs every
+                time you click or skip something. After a few minutes of playing
+                with it, the explore-vs-exploit tradeoff behind every feed you
+                scroll stops being abstract.
+              </p>
+              <ul class="tags">
+                <li>FastAPI</li>
+                <li>Recommendation systems</li>
+                <li>Contextual bandits</li>
+                <li>Real article data</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://banditfeed.netlify.app" target="_blank" rel="noopener">Live demo &rarr;</a>
+                <a href="https://github.com/TylerJForstrom/BanditFeed" target="_blank" rel="noopener">Code &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Languages & tools -->
+        <div class="project-group">
+          <h3 class="group-title">Languages &amp; tools</h3>
+          <div class="work-grid">
+            <!-- Plain programming language -->
+            <article class="project reveal" data-topics="languages">
+              <h3>Plain: a programming language that reads like English</h3>
+              <p class="project-blurb">
+                I kept watching people bounce off their first programming
+                language because the syntax got in the way before the ideas
+                could. So I built Plain — a complete language with its own
+                tokenizer, parser, and interpreter, written from scratch in
+                Python. You write real programs in words you already know, errors
+                point at the exact line and explain themselves, and a trace mode
+                narrates what the code is doing as it runs. It's not a toy: the
+                repo includes 16 LeetCode problems solved entirely in Plain, and
+                the demo site runs the real interpreter right in your browser.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Language design</li>
+                <li>Interpreters</li>
+                <li>WebAssembly (Pyodide)</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://plaincodinglanguage.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/Plain" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Games & graphics -->
+        <div class="project-group" id="games">
+          <h3 class="group-title">Games &amp; graphics</h3>
+          <div class="work-grid">
+            <!-- Photon Forge -->
+            <article class="project reveal" data-topics="games">
+              <h3>Photon Forge: a 3D puzzle game about bending light</h3>
+              <p class="project-blurb">
+                Drag mirrors, prisms, and filters onto a 3D board, then route
+                beams of light through the scene to hit your targets. It started
+                as a way to make computer-graphics concepts — reflections, ray
+                intersections, color filtering — something you can play with
+                instead of just read about. The math underneath is real, but the
+                goal was always for the puzzles to feel intuitive. There's a
+                sandbox mode if you want to build your own levels.
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>Three.js</li>
+                <li>Computer graphics</li>
+                <li>3D game UI</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://photonforge.netlify.app" target="_blank" rel="noopener">Live demo &rarr;</a>
+                <a href="https://github.com/TylerJForstrom/Photon-Forge" target="_blank" rel="noopener">Code &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Ripple -->
+            <article class="project reveal" data-topics="games">
+              <h3>Ripple: a wave-interference puzzle</h3>
+              <p class="project-blurb">
+                A little browser puzzle about wave physics. Place emitters so the
+                ripples reinforce the targets you want and cancel out the ones
+                you don't. Built with vanilla JavaScript and Canvas — and every
+                level is generated backwards from a known solution, so the
+                puzzles are always solvable. Tricky, but never unfair.
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>Canvas</li>
+                <li>Wave physics</li>
+                <li>Procedural generation</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://ripple-tyler.netlify.app" target="_blank" rel="noopener">Play →</a>
+                <a href="https://github.com/TylerJForstrom/Ripple" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p id="filter-empty" class="filter-empty" hidden>
+          Nothing matches that — try a different word, or
+          <button type="button" id="filter-clear" class="filter-clear">show everything</button>.
+        </p>
       </section>
 
       <!-- ABOUT -->
       <section id="about" class="section">
         <h2 class="section-title">About</h2>
         <p class="about-text">
-          I'm a computer science student at Cornell, graduating in December 2026, with
-          a minor in business. I tend to learn by building. If I get interested in a
-          system, I try to make a working version of it: a market simulator to understand
-          trading behavior, a recommendation demo to understand ranking algorithms, or a
-          graphics puzzle to understand rays, reflections, and 3D interaction.
+          I'm a computer science student at Cornell (graduating December 2026,
+          with a business minor), and I learn best by building. When a system
+          catches my interest, I make a working version of it: a market simulator
+          to understand trading behavior, a recommendation demo to understand
+          ranking algorithms, a graphics puzzle to understand rays and
+          reflections.
         </p>
         <p class="about-text">
-          I care about building things that can be explained and tested. I've interned
-          as an app developer at Kahua, worked on full-stack features, and helped start
-          an investing club at Cornell. Outside of coding, I'm usually at the gym,
-          training martial arts, gaming, or out on a golf course. Right now I'm looking
-          for software engineering roles where I can keep building practical systems
-          and learn from strong engineers.
+          I care about building things that can be explained and tested — if I
+          can't tell you plainly how something works, I don't trust it yet. I've
+          interned as an app developer at Kahua, shipped full-stack features, and
+          helped start an investing club at Cornell. Outside of code you'll find
+          me at the gym, training martial arts, gaming, or out on a golf course.
+          Right now I'm looking for software engineering roles where I can keep
+          building practical systems and learn from strong engineers.
         </p>
         <h3 class="skills-title">Tools I work with</h3>
         <ul class="skills">
@@ -339,8 +386,9 @@
       <section id="contact" class="section">
         <h2 class="section-title">Get in touch</h2>
         <p class="about-text">
-          I'm open to software engineering roles, internships, and projects where I can
-          contribute quickly and keep learning. The fastest way to reach me:
+          I'm looking for software engineering roles and internships — but I'm
+          also happy to talk projects, trade feedback, or answer questions about
+          anything on this page. Email is the fastest way to reach me:
         </p>
         <div class="cta-row">
           <a class="btn" href="mailto:tylerjamesforstrom@gmail.com">Email me</a>

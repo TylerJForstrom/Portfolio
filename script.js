@@ -1,7 +1,8 @@
 /* Tiny, dependency-free enhancements for the portfolio.
    1) keep the footer year current
    2) fade content in on scroll (respecting reduced-motion)
-   3) a soft accent glow that follows the cursor across the hero */
+   3) a soft accent glow that follows the cursor across the hero
+   4) project search + topic filter */
 (() => {
   "use strict";
 
@@ -50,5 +51,66 @@
         queued = false;
       });
     });
+  }
+
+  // --- project search + topic filter ---
+  const searchBox = document.getElementById("project-search");
+  const chips = Array.from(document.querySelectorAll(".filter-chip"));
+  const cards = Array.from(document.querySelectorAll("#work .project"));
+  const groups = Array.from(document.querySelectorAll(".project-group"));
+  const emptyNote = document.getElementById("filter-empty");
+  const clearBtn = document.getElementById("filter-clear");
+
+  if (searchBox && cards.length) {
+    let topic = "all";
+
+    const applyFilters = () => {
+      const q = searchBox.value.trim().toLowerCase();
+      let shown = 0;
+      cards.forEach((card) => {
+        const topics = (card.dataset.topics || "").split(/\s+/);
+        const matchesTopic = topic === "all" || topics.includes(topic);
+        const matchesText = !q || card.textContent.toLowerCase().includes(q);
+        const show = matchesTopic && matchesText;
+        card.hidden = !show;
+        if (show) {
+          shown += 1;
+          // make sure re-shown cards aren't stuck waiting on the scroll reveal
+          card.classList.add("in");
+        }
+      });
+      // hide group headings whose cards are all filtered out
+      groups.forEach((group) => {
+        group.hidden = !group.querySelector(".project:not([hidden])");
+      });
+      if (emptyNote) emptyNote.hidden = shown > 0;
+    };
+
+    searchBox.addEventListener("input", applyFilters);
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        topic = chip.dataset.topic || "all";
+        chips.forEach((c) => {
+          const active = c === chip;
+          c.classList.toggle("active", active);
+          c.setAttribute("aria-pressed", String(active));
+        });
+        applyFilters();
+      });
+    });
+
+    if (clearBtn) {
+      clearBtn.addEventListener("click", () => {
+        searchBox.value = "";
+        topic = "all";
+        chips.forEach((c) => {
+          const active = c.dataset.topic === "all";
+          c.classList.toggle("active", active);
+          c.setAttribute("aria-pressed", String(active));
+        });
+        applyFilters();
+      });
+    }
   }
 })();

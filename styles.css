@@ -343,6 +343,114 @@ main {
   background: linear-gradient(90deg, var(--border-strong), transparent);
 }
 
+.section-note {
+  color: var(--muted);
+  max-width: 640px;
+  margin: -14px 0 26px;
+}
+
+/* project search + topic filters */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 34px;
+}
+.project-search {
+  width: 100%;
+  max-width: 480px;
+  background: var(--panel);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  padding: 11px 14px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+.project-search::placeholder {
+  color: var(--muted);
+}
+.project-search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.15);
+}
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-chip {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 13px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+.filter-chip:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+.filter-chip.active {
+  color: #08111b;
+  background: var(--grad);
+  border-color: transparent;
+  font-weight: 700;
+}
+
+/* project groups */
+.project-group {
+  margin: 0 0 38px;
+  scroll-margin-top: 80px;
+}
+.project-group:last-of-type {
+  margin-bottom: 0;
+}
+.group-title {
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--soft);
+  margin: 0 0 16px;
+}
+.group-title::before {
+  content: "// ";
+  color: var(--accent-2);
+  opacity: 0.7;
+}
+.project-group[hidden],
+.project[hidden] {
+  display: none;
+}
+.filter-empty {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 8px 0 0;
+}
+.filter-empty[hidden] {
+  display: none;
+}
+.filter-clear {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--accent-2);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.filter-clear:hover {
+  text-shadow: 0 0 14px rgba(34, 211, 238, 0.55);
+}
+
 /* work grid */
 .work-grid {
   display: grid;

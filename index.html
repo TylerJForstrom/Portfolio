@@ -265,23 +265,26 @@
                 I kept watching people bounce off their first programming
                 language because the syntax got in the way before the ideas
                 could. So I built Plain — a complete language written from
-                scratch in Python: tokenizer, parser, bytecode compiler, and a
-                stack-based virtual machine. You write real programs in words
-                you already know, errors point at the exact line and explain
-                themselves, and a trace mode narrates what the code is doing as
-                it runs. Programs compile to bytecode and run up to 3× faster
-                than the original tree-walking interpreter, and a differential
-                test harness proves both engines behave identically, error
-                messages included. It's not a toy: the repo includes 16 LeetCode
-                problems solved entirely in Plain, and the demo site runs the
-                real compiler in your browser — with a viewer that shows the
-                bytecode your program compiles to.
+                scratch in Python: tokenizer, parser, optimizing bytecode
+                compiler, and a stack-based virtual machine. You write real
+                programs in words you already know, errors point at the exact
+                line and explain themselves, and a visual step-debugger in the
+                browser walks your code one statement at a time — watch
+                variables change and the call stack grow. The optimizer folds
+                constants and fuses hot instructions, making programs up to
+                ~4.8× faster than the original tree-walking interpreter, and
+                every push runs a differential suite plus hundreds of fuzzed
+                random programs in CI to prove both engines behave identically,
+                error messages included. The demo site runs the real compiler
+                in your browser, with practice problems pinned beside the
+                editor, a bytecode viewer, and 16 solved LeetCode problems.
               </p>
               <ul class="tags">
                 <li>Python</li>
                 <li>Language design</li>
                 <li>Compilers</li>
                 <li>Bytecode VM</li>
+                <li>Step debugger</li>
                 <li>WebAssembly (Pyodide)</li>
               </ul>
               <div class="project-links">

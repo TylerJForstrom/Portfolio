@@ -144,17 +144,20 @@
         "parser", "tokenizer", "english", "reads like english", "leetcode", "playground",
         "learn to code", "beginner", "beginners", "teaching", "pyodide", "syntax",
         "bytecode", "vm", "virtual machine", "stack machine", "disassembler",
-        "stack-based", "opcodes"],
+        "stack-based", "opcodes", "debugger", "step debugger", "optimizer",
+        "constant folding", "superinstructions", "fuzzing", "fuzzer"],
       answer:
         "Tyler designed and built <strong>Plain</strong>, a programming language that reads " +
-        "like English — tokenizer, parser, bytecode compiler, and a stack-based virtual " +
-        "machine, all written from scratch in pure Python. Programs compile to bytecode and " +
-        "run up to ~3x faster than the original tree-walking interpreter (still there behind " +
-        "--engine=ast), and a differential test harness proves both engines produce identical " +
-        "output — friendly line-numbered errors included. It's expressive enough to solve " +
-        "real interview problems (the repo has 16 solved LeetCode problems), and the demo " +
-        "site runs the real compiler in your browser, with a Show-bytecode view, practice " +
-        "problems, and searchable docs. " +
+        "like English — tokenizer, parser, optimizing bytecode compiler, and a stack-based " +
+        "virtual machine, all written from scratch in pure Python. A peephole optimizer " +
+        "folds constants and fuses hot instruction pairs, so programs run up to ~4.8x " +
+        "faster than the original tree-walking interpreter (still there behind " +
+        "--engine=ast). Every push runs a differential suite plus hundreds of fuzzed random " +
+        "programs in CI to prove both engines produce identical output — friendly " +
+        "line-numbered errors included. The demo site runs the real compiler in your " +
+        "browser, with a <em>visual step-debugger</em> (watch variables and the call stack " +
+        "change line by line), a Show-bytecode view, practice problems that stay pinned " +
+        "beside the editor, and 16 solved LeetCode problems. " +
         ext(L.plainDemo, "Live demo") + " · " + ext(L.plainRepo, "Code") + ".",
     },
     {
@@ -188,8 +191,8 @@
         "buzz-vs-price correlation); the <strong>NYC Real Estate Map</strong>, a full-stack " +
         "market analytics platform over 338k real NYC property sales (FastAPI + PostGIS + " +
         "React/MapLibre); <strong>Plain</strong>, a programming language that reads " +
-        "like English (bytecode compiler + stack VM built from scratch, with an " +
-        "in-browser playground); " +
+        "like English (optimizing bytecode compiler + stack VM built from scratch, with " +
+        "an in-browser playground and step-debugger); " +
         "<strong>BanditFeed</strong>, a real-article recommendation demo using contextual " +
         "bandits; <strong>Photon Forge</strong>, a 3D light puzzle with a sandbox level " +
         "builder; an <strong>AI Portfolio Insight Copilot</strong> with portfolio building, " +

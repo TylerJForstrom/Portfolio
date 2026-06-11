@@ -264,18 +264,24 @@
               <p class="project-blurb">
                 I kept watching people bounce off their first programming
                 language because the syntax got in the way before the ideas
-                could. So I built Plain — a complete language with its own
-                tokenizer, parser, and interpreter, written from scratch in
-                Python. You write real programs in words you already know, errors
-                point at the exact line and explain themselves, and a trace mode
-                narrates what the code is doing as it runs. It's not a toy: the
-                repo includes 16 LeetCode problems solved entirely in Plain, and
-                the demo site runs the real interpreter right in your browser.
+                could. So I built Plain — a complete language written from
+                scratch in Python: tokenizer, parser, bytecode compiler, and a
+                stack-based virtual machine. You write real programs in words
+                you already know, errors point at the exact line and explain
+                themselves, and a trace mode narrates what the code is doing as
+                it runs. Programs compile to bytecode and run up to 3× faster
+                than the original tree-walking interpreter, and a differential
+                test harness proves both engines behave identically, error
+                messages included. It's not a toy: the repo includes 16 LeetCode
+                problems solved entirely in Plain, and the demo site runs the
+                real compiler in your browser — with a viewer that shows the
+                bytecode your program compiles to.
               </p>
               <ul class="tags">
                 <li>Python</li>
                 <li>Language design</li>
-                <li>Interpreters</li>
+                <li>Compilers</li>
+                <li>Bytecode VM</li>
                 <li>WebAssembly (Pyodide)</li>
               </ul>
               <div class="project-links">

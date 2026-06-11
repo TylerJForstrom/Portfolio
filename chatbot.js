@@ -142,15 +142,19 @@
       keywords: ["plain", "plain language", "programming language", "coding language",
         "own language", "made a language", "built a language", "interpreter", "compiler",
         "parser", "tokenizer", "english", "reads like english", "leetcode", "playground",
-        "learn to code", "beginner", "beginners", "teaching", "pyodide", "syntax"],
+        "learn to code", "beginner", "beginners", "teaching", "pyodide", "syntax",
+        "bytecode", "vm", "virtual machine", "stack machine", "disassembler",
+        "stack-based", "opcodes"],
       answer:
         "Tyler designed and built <strong>Plain</strong>, a programming language that reads " +
-        "like English — a complete tokenizer, parser, and interpreter written from scratch in " +
-        "pure Python. It sits between block coding and Python: real typed-out programs in " +
-        "everyday words, friendly line-numbered errors, and a trace mode that narrates code " +
-        "as it runs. It's expressive enough to solve real interview problems (the repo has 16 " +
-        "solved LeetCode problems), and the demo site runs the actual interpreter in your " +
-        "browser with a playground, practice problems, and searchable docs. " +
+        "like English — tokenizer, parser, bytecode compiler, and a stack-based virtual " +
+        "machine, all written from scratch in pure Python. Programs compile to bytecode and " +
+        "run up to ~3x faster than the original tree-walking interpreter (still there behind " +
+        "--engine=ast), and a differential test harness proves both engines produce identical " +
+        "output — friendly line-numbered errors included. It's expressive enough to solve " +
+        "real interview problems (the repo has 16 solved LeetCode problems), and the demo " +
+        "site runs the real compiler in your browser, with a Show-bytecode view, practice " +
+        "problems, and searchable docs. " +
         ext(L.plainDemo, "Live demo") + " · " + ext(L.plainRepo, "Code") + ".",
     },
     {
@@ -184,7 +188,8 @@
         "buzz-vs-price correlation); the <strong>NYC Real Estate Map</strong>, a full-stack " +
         "market analytics platform over 338k real NYC property sales (FastAPI + PostGIS + " +
         "React/MapLibre); <strong>Plain</strong>, a programming language that reads " +
-        "like English (interpreter built from scratch, with an in-browser playground); " +
+        "like English (bytecode compiler + stack VM built from scratch, with an " +
+        "in-browser playground); " +
         "<strong>BanditFeed</strong>, a real-article recommendation demo using contextual " +
         "bandits; <strong>Photon Forge</strong>, a 3D light puzzle with a sandbox level " +
         "builder; an <strong>AI Portfolio Insight Copilot</strong> with portfolio building, " +

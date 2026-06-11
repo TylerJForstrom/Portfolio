@@ -108,8 +108,10 @@
         "from thousands of trading agents interacting through an order book. He added a validation " +
         "layer with Deflated Sharpe Ratio, walk-forward testing, and realistic costs to check " +
         "whether strategies actually had edge. Most directional strategies did not hold up, which " +
-        "was the honest result; volatility forecasting was the useful signal. Pure Python, " +
-        "~350 tests. " +
+        "was the honest result; volatility forecasting was the useful signal. The simulator itself " +
+        "is audited with controlled whale-order experiments against the square-root impact law — " +
+        "failures get published and drive mechanism fixes, never quiet re-tuning. Pure Python, " +
+        "~390 tests. " +
         ext(L.demo, "Live demo") + " · " + ext(L.repo, "Code") + ".",
     },
     {

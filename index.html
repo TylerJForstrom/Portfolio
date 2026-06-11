@@ -294,6 +294,38 @@
                 <a href="https://github.com/TylerJForstrom/Plain" target="_blank" rel="noopener">Code →</a>
               </div>
             </article>
+
+            <!-- GlassDB -->
+            <article class="project reveal" data-topics="languages">
+              <h3>GlassDB: a SQL database you can see through</h3>
+              <p class="project-blurb">
+                Every project I build sits on a database, and I didn't love
+                that I was treating that layer as a black box. So I built one
+                from scratch in Rust — pager with a buffer pool, write-ahead
+                log, B+tree, SQL parser, and a query planner — with zero
+                dependencies and no unsafe code. Then I put a glass wall on
+                it: the demo runs the real engine in your browser through
+                WebAssembly, and you watch it think. Run
+                <em>WHERE id = 250</em> and two pages light up; filter on a
+                column with no index and watch it walk every leaf. My favorite
+                part is the testing: a simulated disk cuts the power at every
+                single write — hundreds of crash-and-recover cycles in CI —
+                proving committed transactions always survive and
+                half-finished ones never appear.
+              </p>
+              <ul class="tags">
+                <li>Rust</li>
+                <li>Systems programming</li>
+                <li>B+tree &amp; write-ahead log</li>
+                <li>Query planner</li>
+                <li>Crash-injection testing</li>
+                <li>WebAssembly</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://glassdb.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/Storage" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -380,6 +412,7 @@
           <li>Python</li>
           <li>Java</li>
           <li>C</li>
+          <li>Rust</li>
           <li>OCaml</li>
           <li>SQL</li>
           <li>PostgreSQL / PostGIS</li>

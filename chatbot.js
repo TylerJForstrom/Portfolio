@@ -35,6 +35,8 @@
     nycRepo: "https://github.com/TylerJForstrom/NYCRealEstateMap",
     pulseDemo: "https://tickerpulse-demo.netlify.app",
     pulseRepo: "https://github.com/TylerJForstrom/TickerPulse",
+    glassDemo: "https://glassdb.netlify.app",
+    glassRepo: "https://github.com/TylerJForstrom/Storage",
   };
   const ext = (href, text) =>
     `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
@@ -44,6 +46,7 @@
     "Tell me about TickerPulse",
     "Tell me about the NYC real estate map",
     "Tell me about the Plain language",
+    "Tell me about GlassDB",
     "Tell me about BanditFeed",
     "Tell me about Photon Forge",
     "What tech does he use?",
@@ -163,6 +166,27 @@
         ext(L.plainDemo, "Live demo") + " · " + ext(L.plainRepo, "Code") + ".",
     },
     {
+      keywords: ["glassdb", "glass db", "glass", "database", "databases", "database engine",
+        "sql engine", "storage engine", "b+tree", "btree", "b tree", "write ahead log",
+        "write-ahead log", "wal", "pager", "buffer pool", "page cache", "rust",
+        "crash", "crash safe", "crash recovery", "crash testing", "crash injection",
+        "acid", "transaction", "transactions", "durability", "query planner",
+        "query plan", "explain", "wasm", "webassembly", "sqlite", "postgres",
+        "systems programming", "built a database", "own database"],
+      answer:
+        "Tyler built <strong>GlassDB</strong>, a crash-safe SQL database engine written " +
+        "from scratch in Rust — pager with a buffer pool, write-ahead log, B+tree, SQL " +
+        "parser, and a query planner that explains its choices — with zero dependencies " +
+        "and no unsafe code. The demo runs the real engine in your browser via " +
+        "WebAssembly and visualizes every page read, every WAL write, and the B+tree " +
+        "shape as queries execute, so you can watch a primary-key lookup touch 2 pages " +
+        "while a full scan walks them all. Testing is the headline: differential " +
+        "fuzzing against Rust's BTreeMap as an oracle, plus crash injection — a " +
+        "simulated disk cuts power at every single disk operation, and the suite " +
+        "proves committed transactions always survive and unfinished ones vanish. " +
+        ext(L.glassDemo, "Live demo") + " · " + ext(L.glassRepo, "Code") + ".",
+    },
+    {
       keywords: ["game", "games", "ripple", "puzzle", "play", "wave", "interference", "arcade"],
       answer:
         "Tyler has two browser games/demos: <strong>Photon Forge</strong>, a 3D " +
@@ -195,6 +219,8 @@
         "React/MapLibre); <strong>Plain</strong>, a programming language that reads " +
         "like English (optimizing bytecode compiler + stack VM built from scratch, with " +
         "an in-browser playground and step-debugger); " +
+        "<strong>GlassDB</strong>, a crash-safe SQL database engine built from scratch " +
+        "in Rust that runs visibly in the browser via WebAssembly; " +
         "<strong>BanditFeed</strong>, a real-article recommendation demo using contextual " +
         "bandits; <strong>Photon Forge</strong>, a 3D light puzzle with a sandbox level " +
         "builder; an <strong>AI Portfolio Insight Copilot</strong> with portfolio building, " +
@@ -202,20 +228,20 @@
         "<strong>agent-based stock market simulator</strong> with a validation layer. " +
         "He also built <strong>Ripple</strong>, a wave-interference puzzle game. " +
         "Want details on any?",
-      chips: ["Tell me about the NYC real estate map", "Tell me about the Plain language", "Tell me about BanditFeed"],
+      chips: ["Tell me about GlassDB", "Tell me about the Plain language", "Tell me about the NYC real estate map"],
     },
     {
       keywords: ["skill", "skills", "tech", "stack", "language", "languages", "tools",
         "technology", "technologies", "programming", "frameworks", "framework",
         "python", "java", "ocaml", "sql", "tensorflow", "fastapi"],
       answer:
-        "Tyler works in <strong>Python, Java, C, OCaml, and SQL</strong>, with " +
+        "Tyler works in <strong>Python, Java, C, Rust, OCaml, and SQL</strong>, with " +
         "<strong>PyTorch</strong> and <strong>TensorFlow</strong> for ML, plus " +
         "JavaScript / <strong>TypeScript &amp; React</strong>, HTML / CSS, " +
         "<strong>FastAPI</strong>, <strong>PostgreSQL/PostGIS</strong>, " +
         "<strong>Three.js/WebGL</strong>, and Git. He's comfortable across ML, " +
         "recommendation systems, data engineering and geospatial work, simulation, " +
-        "computer graphics, and web.",
+        "systems programming, computer graphics, and web.",
     },
     {
       keywords: ["looking", "hiring", "hire", "job", "jobs", "role", "roles",
@@ -271,7 +297,8 @@
       answer:
         "I can tell you about Tyler's background, his projects (TickerPulse — a social " +
         "sentiment & trend radar for stocks, the NYC Real Estate Map, " +
-        "Plain — his own programming language, BanditFeed, an AI Portfolio Insight Copilot " +
+        "Plain — his own programming language, GlassDB — a from-scratch SQL database " +
+        "engine in Rust, BanditFeed, an AI Portfolio Insight Copilot " +
         "with portfolio building and simulation-backed estimates, an agent-based stock " +
         "market simulator, Photon Forge, and the Ripple puzzle game), the tech he uses, " +
         "what he's looking for, or how to contact him. What would you like to know?",

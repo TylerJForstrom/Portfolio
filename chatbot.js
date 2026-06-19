@@ -37,6 +37,8 @@
     pulseRepo: "https://github.com/TylerJForstrom/TickerPulse",
     glassDemo: "https://glassdb.netlify.app",
     glassRepo: "https://github.com/TylerJForstrom/Storage",
+    mathDemo: "https://mathematical-solver.netlify.app",
+    mathRepo: "https://github.com/TylerJForstrom/Mathematical_Solver",
   };
   const ext = (href, text) =>
     `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
@@ -47,6 +49,7 @@
     "Tell me about the NYC real estate map",
     "Tell me about the Plain language",
     "Tell me about GlassDB",
+    "Tell me about the Mathematical Solver",
     "Tell me about BanditFeed",
     "Tell me about Photon Forge",
     "What tech does he use?",
@@ -187,6 +190,26 @@
         ext(L.glassDemo, "Live demo") + " · " + ext(L.glassRepo, "Code") + ".",
     },
     {
+      keywords: ["math", "maths", "mathematical", "math solver", "mathematical solver",
+        "solver", "calculus", "algebra", "statistics", "stats", "derivative",
+        "integral", "equation", "equations", "linear algebra", "matrix", "matrices",
+        "probability", "regression", "numerical", "numerical methods", "newton's method",
+        "time series", "word problem", "word problems", "symbolic math", "natural language math"],
+      answer:
+        "Tyler built the <strong>Mathematical Solver</strong>, a from-scratch math & stats " +
+        "engine in plain JavaScript with zero libraries doing the math. You type a question " +
+        "the way you'd actually ask it — \"what is the probability of 3 heads in 10 coin " +
+        "flips\" or \"does the sum of 1/n^2 converge\" — and a natural-language parser maps " +
+        "it to the right kind of problem, then routes it to the matching engine. It spans " +
+        "algebra, calculus, linear algebra, graphing, numerical methods, probability, " +
+        "statistics, and time series, and every answer shows step-by-step work, a table of " +
+        "artifacts, and a graph or expression tree when it helps. Everything is hand-written " +
+        "— Newton's method, Holt exponential smoothing, chi-square goodness-of-fit — and " +
+        "200+ regression tests keep it honest as the engine grows. " +
+        ext(L.mathDemo, "Live demo") + " · " + ext(L.mathRepo, "Code") + ".",
+      chips: ["Tell me about GlassDB", "Tell me about the Plain language", "What tech does he use?"],
+    },
+    {
       keywords: ["game", "games", "ripple", "puzzle", "play", "wave", "interference", "arcade"],
       answer:
         "Tyler has two browser games/demos: <strong>Photon Forge</strong>, a 3D " +
@@ -220,7 +243,9 @@
         "like English (optimizing bytecode compiler + stack VM built from scratch, with " +
         "an in-browser playground and step-debugger); " +
         "<strong>GlassDB</strong>, a crash-safe SQL database engine built from scratch " +
-        "in Rust that runs visibly in the browser via WebAssembly; " +
+        "in Rust that runs visibly in the browser via WebAssembly; the " +
+        "<strong>Mathematical Solver</strong>, a from-scratch math & stats engine that " +
+        "turns plain-English questions into the right problem type and shows its work; " +
         "<strong>BanditFeed</strong>, a real-article recommendation demo using contextual " +
         "bandits; <strong>Photon Forge</strong>, a 3D light puzzle with a sandbox level " +
         "builder; an <strong>AI Portfolio Insight Copilot</strong> with portfolio building, " +
@@ -298,7 +323,8 @@
         "I can tell you about Tyler's background, his projects (TickerPulse — a social " +
         "sentiment & trend radar for stocks, the NYC Real Estate Map, " +
         "Plain — his own programming language, GlassDB — a from-scratch SQL database " +
-        "engine in Rust, BanditFeed, an AI Portfolio Insight Copilot " +
+        "engine in Rust, the Mathematical Solver — a from-scratch math & stats engine, " +
+        "BanditFeed, an AI Portfolio Insight Copilot " +
         "with portfolio building and simulation-backed estimates, an agent-based stock " +
         "market simulator, Photon Forge, and the Ripple puzzle game), the tech he uses, " +
         "what he's looking for, or how to contact him. What would you like to know?",

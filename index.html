@@ -105,11 +105,104 @@
           />
           <div class="filter-chips" role="group" aria-label="Filter projects by topic">
             <button type="button" class="filter-chip active" data-topic="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-chip" data-topic="simulation" aria-pressed="false">Simulation &amp; ML</button>
             <button type="button" class="filter-chip" data-topic="ai" aria-pressed="false">AI &amp; machine learning</button>
             <button type="button" class="filter-chip" data-topic="finance" aria-pressed="false">Finance &amp; markets</button>
             <button type="button" class="filter-chip" data-topic="data" aria-pressed="false">Data &amp; maps</button>
             <button type="button" class="filter-chip" data-topic="languages" aria-pressed="false">Languages &amp; tools</button>
             <button type="button" class="filter-chip" data-topic="games" aria-pressed="false">Games &amp; graphics</button>
+          </div>
+        </div>
+
+        <!-- Simulation & machine learning -->
+        <div class="project-group">
+          <h3 class="group-title">Simulation &amp; machine learning</h3>
+          <div class="work-grid">
+            <!-- Adaptive Ecosystem Lab -->
+            <article class="project reveal" data-topics="simulation ai">
+              <h3>Adaptive Ecosystem Lab: five species that learn to survive together</h3>
+              <p class="project-blurb">
+                I wanted to see whether five species could learn to coexist with
+                no rules handed to them — just reward, trial, and error. So I
+                built a vectorized 2D ecosystem and a multi-agent reinforcement
+                learning trainer from scratch in NumPy and PyTorch: herbivores,
+                predators, decomposers, pollinators, and engineers each train
+                their own policy network at once, in a world that adapts right
+                back. The honest part is what makes it a real ML project — the
+                run kept silently collapsing. A predator policy would
+                mode-collapse, the food web would crater into NaNs, and 70% of
+                the compute was wasted. I diagnosed all three failure modes and
+                engineered the fixes — a PPO ratio-overflow guard, a global
+                carrying capacity, and an adaptive entropy controller — taking
+                the run from always-collapsing to stable. The live demo plays
+                back the actual trained ecosystem and charts the training score
+                collapsing and recovering.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>Multi-agent RL</li>
+                <li>PPO from scratch</li>
+                <li>Training stability</li>
+                <li>NumPy vectorization</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://adaptive-ecosystem.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/EvolutionSim" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
+
+            <!-- Agent-based market simulator -->
+            <article class="project reveal" data-topics="simulation finance data">
+              <h3>Market Simulator: a stock market grown from thousands of trading bots</h3>
+              <p class="project-blurb">
+                Instead of backtesting against historical prices, I built the
+                market itself: thousands of trader agents placing orders into an
+                order book, with prices emerging from how they interact. Then I
+                added a validation layer to ask the uncomfortable question — do
+                these strategies actually have an edge once you account for costs?
+                Most didn't, and I kept that result instead of burying it.
+                Volatility forecasting was the signal that held up, and the
+                simulator now feeds calibration data to my Portfolio Insight
+                Copilot. I even audit the simulator itself against known
+                empirical laws of real markets — and document where it still
+                falls short.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Simulation</li>
+                <li>Applied statistics</li>
+                <li>Data engine</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://stockmarketsimtyler.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/Stock-Market-Sim" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
+
+            <!-- BanditFeed -->
+            <article class="project reveal" data-topics="simulation ai data">
+              <h3>BanditFeed: watch a recommendation algorithm think</h3>
+              <p class="project-blurb">
+                Recommendation algorithms decide what most of us read, but
+                they're invisible. BanditFeed makes one watchable: it ranks real
+                RSS articles using contextual bandits, shows you exactly why each
+                article was recommended, and visibly updates its beliefs every
+                time you click or skip something. After a few minutes of playing
+                with it, the explore-vs-exploit tradeoff behind every feed you
+                scroll stops being abstract.
+              </p>
+              <ul class="tags">
+                <li>FastAPI</li>
+                <li>Recommendation systems</li>
+                <li>Contextual bandits</li>
+                <li>Real article data</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://banditfeed.netlify.app" target="_blank" rel="noopener">Live demo &rarr;</a>
+                <a href="https://github.com/TylerJForstrom/BanditFeed" target="_blank" rel="noopener">Code &rarr;</a>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -168,40 +261,12 @@
                 <a href="https://github.com/TylerJForstrom/Portfolio-Insight-Copilot" target="_blank" rel="noopener">Code →</a>
               </div>
             </article>
-
-            <!-- Agent-based market simulator -->
-            <article class="project reveal" data-topics="finance data">
-              <h3>Market Simulator: a stock market grown from thousands of trading bots</h3>
-              <p class="project-blurb">
-                Instead of backtesting against historical prices, I built the
-                market itself: thousands of trader agents placing orders into an
-                order book, with prices emerging from how they interact. Then I
-                added a validation layer to ask the uncomfortable question — do
-                these strategies actually have an edge once you account for costs?
-                Most didn't, and I kept that result instead of burying it.
-                Volatility forecasting was the signal that held up, and the
-                simulator now feeds calibration data to my Portfolio Insight
-                Copilot. I even audit the simulator itself against known
-                empirical laws of real markets — and document where it still
-                falls short.
-              </p>
-              <ul class="tags">
-                <li>Python</li>
-                <li>Simulation</li>
-                <li>Applied statistics</li>
-                <li>Data engine</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://stockmarketsimtyler.netlify.app" target="_blank" rel="noopener">Live demo →</a>
-                <a href="https://github.com/TylerJForstrom/Stock-Market-Sim" target="_blank" rel="noopener">Code →</a>
-              </div>
-            </article>
           </div>
         </div>
 
-        <!-- Data & machine learning -->
+        <!-- Data & maps -->
         <div class="project-group">
-          <h3 class="group-title">Data &amp; machine learning</h3>
+          <h3 class="group-title">Data &amp; maps</h3>
           <div class="work-grid">
             <!-- NYC Real Estate Map -->
             <article class="project reveal" data-topics="data">
@@ -227,30 +292,6 @@
               <div class="project-links">
                 <a href="https://nycrealestatemap.netlify.app" target="_blank" rel="noopener">Live demo →</a>
                 <a href="https://github.com/TylerJForstrom/NYCRealEstateMap" target="_blank" rel="noopener">Code →</a>
-              </div>
-            </article>
-
-            <!-- BanditFeed -->
-            <article class="project reveal" data-topics="ai data">
-              <h3>BanditFeed: watch a recommendation algorithm think</h3>
-              <p class="project-blurb">
-                Recommendation algorithms decide what most of us read, but
-                they're invisible. BanditFeed makes one watchable: it ranks real
-                RSS articles using contextual bandits, shows you exactly why each
-                article was recommended, and visibly updates its beliefs every
-                time you click or skip something. After a few minutes of playing
-                with it, the explore-vs-exploit tradeoff behind every feed you
-                scroll stops being abstract.
-              </p>
-              <ul class="tags">
-                <li>FastAPI</li>
-                <li>Recommendation systems</li>
-                <li>Contextual bandits</li>
-                <li>Real article data</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://banditfeed.netlify.app" target="_blank" rel="noopener">Live demo &rarr;</a>
-                <a href="https://github.com/TylerJForstrom/BanditFeed" target="_blank" rel="noopener">Code &rarr;</a>
               </div>
             </article>
           </div>

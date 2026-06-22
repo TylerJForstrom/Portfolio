@@ -8,14 +8,14 @@
     <title>Tyler Forstrom | Software Engineer</title>
     <meta
       name="description"
-      content="Tyler Forstrom, software engineer and Cornell CS student. AI, data, market simulation, graphics, and web projects — all with live demos you can try."
+      content="Tyler Forstrom, software engineer and Cornell CS student. AI, data, market simulation, graphics, and web projects, all with live demos you can try."
     />
     <!-- Nice link previews when you share the URL (LinkedIn, texts, etc.) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tyler Forstrom | Software Engineer" />
     <meta
       property="og:description"
-      content="Software engineering projects in AI, data platforms, simulation, graphics, and web development — all with live demos."
+      content="Software engineering projects in AI, data platforms, simulation, graphics, and web development, all with live demos."
     />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -90,7 +90,7 @@
       <section id="work" class="section">
         <h2 class="section-title">Projects</h2>
         <p class="section-note">
-          Everything here is live — every project has a demo you can actually
+          Everything here is live. Every project has a demo you can actually
           click around in. Search below, or filter by topic.
         </p>
 
@@ -99,7 +99,7 @@
             id="project-search"
             class="project-search"
             type="search"
-            placeholder="Search projects — try &quot;AI&quot;, &quot;maps&quot;, &quot;puzzle&quot;…"
+            placeholder="Search projects, try &quot;AI&quot;, &quot;maps&quot;, &quot;puzzle&quot;…"
             aria-label="Search projects"
             autocomplete="off"
           />
@@ -122,21 +122,21 @@
             <article class="project reveal" data-topics="simulation ai">
               <h3>Adaptive Ecosystem Lab: five species that learn to survive together</h3>
               <p class="project-blurb">
-                I wanted to see whether five species could learn to coexist with
-                no rules handed to them — just reward, trial, and error. So I
-                built a vectorized 2D ecosystem and a multi-agent reinforcement
-                learning trainer from scratch in NumPy and PyTorch: herbivores,
-                predators, decomposers, pollinators, and engineers each train
-                their own policy network at once, in a world that adapts right
-                back. The honest part is what makes it a real ML project — the
-                run kept silently collapsing. A predator policy would
-                mode-collapse, the food web would crater into NaNs, and 70% of
-                the compute was wasted. I diagnosed all three failure modes and
-                engineered the fixes — a PPO ratio-overflow guard, a global
-                carrying capacity, and an adaptive entropy controller — taking
-                the run from always-collapsing to stable. The live demo plays
-                back the actual trained ecosystem and charts the training score
-                collapsing and recovering.
+                I wanted to see whether five species could learn to live together
+                with no rules handed to them, just reward and a lot of trial and
+                error. So I built a vectorized 2D ecosystem and a multi-agent
+                reinforcement learning trainer from scratch in NumPy and PyTorch.
+                Herbivores, predators, decomposers, pollinators, and engineers
+                each train their own policy network at the same time, in a world
+                that pushes right back. The messy part is what makes it a real ML
+                project: the run kept quietly falling apart. A predator policy
+                would mode-collapse, the food web would crater into NaNs, and
+                about 70% of the compute went to waste. I tracked down all three
+                failure modes and fixed them with a PPO ratio-overflow guard, a
+                global carrying cap, and an adaptive entropy controller, which
+                took the run from always collapsing to actually stable. The live
+                demo replays the real trained ecosystem and charts the training
+                score as it collapses and recovers.
               </p>
               <ul class="tags">
                 <li>Python</li>
@@ -158,15 +158,14 @@
               <p class="project-blurb">
                 Instead of backtesting against historical prices, I built the
                 market itself: thousands of trader agents placing orders into an
-                order book, with prices emerging from how they interact. Then I
-                added a validation layer to ask the uncomfortable question — do
-                these strategies actually have an edge once you account for costs?
-                Most didn't, and I kept that result instead of burying it.
+                order book, with prices coming out of how they interact. Then I
+                added a validation layer to ask the question nobody likes to ask.
+                Do these strategies actually have an edge once you account for
+                costs? Most didn't, and I kept that result instead of burying it.
                 Volatility forecasting was the signal that held up, and the
                 simulator now feeds calibration data to my Portfolio Insight
-                Copilot. I even audit the simulator itself against known
-                empirical laws of real markets — and document where it still
-                falls short.
+                Copilot. I also audit the simulator against known empirical laws
+                of real markets, and I'm upfront about where it still falls short.
               </p>
               <ul class="tags">
                 <li>Python</li>
@@ -218,7 +217,7 @@
                 the internet predicting the move or chasing it? TickerPulse pulls
                 in public chatter from Reddit, StockTwits, Bluesky, and Hacker
                 News, figures out which tickers people are actually talking about
-                (harder than it sounds — "$A" is a real ticker), scores the mood
+                (harder than it sounds; "$A" is a real ticker), scores the mood
                 of every post, and groups the conversation into themes. The
                 dashboard ranks what's trending, flags unusual spikes, and lines
                 social buzz up against real price data so you can see who's
@@ -247,8 +246,8 @@
                 tickers, compare against SPY, QQQ, and SCHD, and run an AI risk
                 review that shows you exactly how it scored things instead of
                 hand-waving. And when the app doesn't have great data on a
-                smaller ticker, it says so — estimates are clearly labeled as
-                simulation-backed rather than passed off as live quotes.
+                smaller ticker, it says so. Estimates are clearly labeled as
+                simulation-backed instead of being passed off as live quotes.
               </p>
               <ul class="tags">
                 <li>JavaScript</li>
@@ -274,7 +273,7 @@
               <p class="project-blurb">
                 Most real-estate sites show asking prices. I wanted what homes
                 <em>actually</em> sold for, so I built this on 338,000 recorded
-                sales from NYC Open Data — real deeds, real dates, no scraped
+                sales from NYC Open Data: real deeds, real dates, no scraped
                 listings. There's an interactive map with price heatmaps and
                 neighborhood comparisons, plus a Market Insights tab that answers
                 the questions buyers actually have: which neighborhoods are
@@ -307,20 +306,21 @@
               <p class="project-blurb">
                 I kept watching people bounce off their first programming
                 language because the syntax got in the way before the ideas
-                could. So I built Plain — a complete language written from
+                could. So I built Plain, a complete language written from
                 scratch in Python: tokenizer, parser, optimizing bytecode
                 compiler, and a stack-based virtual machine. You write real
                 programs in words you already know, errors point at the exact
                 line and explain themselves, and a visual step-debugger in the
-                browser walks your code one statement at a time — watch
-                variables change and the call stack grow. The optimizer folds
-                constants and fuses hot instructions, making programs up to
-                ~4.8× faster than the original tree-walking interpreter, and
-                every push runs a differential suite plus hundreds of fuzzed
-                random programs in CI to prove both engines behave identically,
-                error messages included. The demo site runs the real compiler
-                in your browser, with practice problems pinned beside the
-                editor, a bytecode viewer, and 16 solved LeetCode problems.
+                browser walks your code one statement at a time, so you can
+                watch variables change and the call stack grow. The optimizer
+                folds constants and fuses hot instructions, which makes programs
+                run up to about 4.8x faster than the original tree-walking
+                interpreter. Every push runs a differential suite plus hundreds
+                of fuzzed random programs in CI to prove both engines behave
+                identically, error messages included. The demo site runs the
+                real compiler in your browser, with practice problems pinned
+                beside the editor, a bytecode viewer, and 16 solved LeetCode
+                problems.
               </p>
               <ul class="tags">
                 <li>Python</li>
@@ -341,18 +341,18 @@
               <h3>GlassDB: a SQL database you can see through</h3>
               <p class="project-blurb">
                 Every project I build sits on a database, and I didn't love
-                that I was treating that layer as a black box. So I built one
-                from scratch in Rust — pager with a buffer pool, write-ahead
-                log, B+tree, SQL parser, and a query planner — with zero
+                treating that layer as a black box. So I built one from scratch
+                in Rust, with a pager and buffer pool, a write-ahead log, a
+                B+tree, a SQL parser, and a query planner, all with zero
                 dependencies and no unsafe code. Then I put a glass wall on
                 it: the demo runs the real engine in your browser through
-                WebAssembly, and you watch it think. Run
+                WebAssembly, so you can watch it think. Run
                 <em>WHERE id = 250</em> and two pages light up; filter on a
                 column with no index and watch it walk every leaf. My favorite
-                part is the testing: a simulated disk cuts the power at every
-                single write — hundreds of crash-and-recover cycles in CI —
-                proving committed transactions always survive and
-                half-finished ones never appear.
+                part is the testing. A simulated disk cuts the power at every
+                single write, hundreds of crash-and-recover cycles in CI, and
+                the suite proves committed transactions always survive while
+                half-finished ones never show up.
               </p>
               <ul class="tags">
                 <li>Rust</li>
@@ -372,19 +372,19 @@
             <article class="project reveal" data-topics="languages data">
               <h3>Mathematical Solver: ask any math question in plain English</h3>
               <p class="project-blurb">
-                I wanted one place that could take a math or stats question —
-                typed the way you'd actually ask it — and not just return an
+                I wanted one place that could take a math or stats question,
+                typed the way you'd actually ask it, and not just hand back an
                 answer but show the work. So I built a solver from scratch in
                 plain JavaScript. A natural-language parser turns questions like
                 <em>"what is the probability of 3 heads in 10 coin flips"</em> or
                 <em>"does the sum of 1/n^2 converge"</em> into the right type of
-                problem, then routes them to the matching engine. It spans
+                problem, then routes them to the matching engine. It covers
                 algebra, calculus, linear algebra, graphing, numerical methods,
                 probability, statistics, and time series, and every result comes
                 with step-by-step reasoning, a table of artifacts, and a graph or
-                expression tree when it helps you see why. No libraries do the
-                math — it's all hand-written, from Newton's method and Holt
-                exponential smoothing to chi-square goodness-of-fit — and 200+
+                expression tree when that helps you see why. No libraries do the
+                math. It's all hand-written, from Newton's method and Holt
+                exponential smoothing to chi-square goodness-of-fit, and 200+
                 regression tests pin every solver so the answers stay correct as
                 the engine grows.
               </p>
@@ -414,9 +414,9 @@
               <p class="project-blurb">
                 Drag mirrors, prisms, and filters onto a 3D board, then route
                 beams of light through the scene to hit your targets. It started
-                as a way to make computer-graphics concepts — reflections, ray
-                intersections, color filtering — something you can play with
-                instead of just read about. The math underneath is real, but the
+                as a way to turn computer-graphics concepts like reflections, ray
+                intersections, and color filtering into something you can play
+                with instead of just read about. The math underneath is real, but the
                 goal was always for the puzzles to feel intuitive. There's a
                 sandbox mode if you want to build your own levels.
               </p>
@@ -438,8 +438,8 @@
               <p class="project-blurb">
                 A little browser puzzle about wave physics. Place emitters so the
                 ripples reinforce the targets you want and cancel out the ones
-                you don't. Built with vanilla JavaScript and Canvas — and every
-                level is generated backwards from a known solution, so the
+                you don't. It's built with vanilla JavaScript and Canvas, and
+                every level is generated backwards from a known solution, so the
                 puzzles are always solvable. Tricky, but never unfair.
               </p>
               <ul class="tags">
@@ -457,7 +457,7 @@
         </div>
 
         <p id="filter-empty" class="filter-empty" hidden>
-          Nothing matches that — try a different word, or
+          Nothing matches that. Try a different word, or
           <button type="button" id="filter-clear" class="filter-clear">show everything</button>.
         </p>
       </section>
@@ -474,7 +474,7 @@
           reflections.
         </p>
         <p class="about-text">
-          I care about building things that can be explained and tested — if I
+          I care about building things that can be explained and tested. If I
           can't tell you plainly how something works, I don't trust it yet. I've
           interned as an app developer at Kahua, shipped full-stack features, and
           helped start an investing club at Cornell. Outside of code you'll find
@@ -505,7 +505,7 @@
       <section id="contact" class="section">
         <h2 class="section-title">Get in touch</h2>
         <p class="about-text">
-          I'm looking for software engineering roles and internships — but I'm
+          I'm looking for software engineering roles and internships, but I'm
           also happy to talk projects, trade feedback, or answer questions about
           anything on this page. Email is the fastest way to reach me:
         </p>

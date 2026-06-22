@@ -13,7 +13,7 @@ filter chips so visitors can find projects by topic.
 
 ## Featured Projects
 
-- TickerPulse: a social sentiment and trend radar for the stock market — a
+- TickerPulse: a social sentiment and trend radar for the stock market, a
   Python NLP pipeline over Reddit, StockTwits, Bluesky, and Hacker News with
   FinBERT sentiment, theme clustering, and a React dashboard comparing social
   buzz against real price data.
@@ -21,8 +21,8 @@ filter chips so visitors can find projects by topic.
   recorded NYC property sales (FastAPI, PostgreSQL/PostGIS, React + TypeScript,
   MapLibre GL) with heatmaps, neighborhood choropleths, and repeat-sales
   insights.
-- Plain: a programming language that reads like English — tokenizer, parser,
-  and interpreter written from scratch in Python, with an in-browser playground
+- Plain: a programming language that reads like English, with a tokenizer, parser,
+  and interpreter written from scratch in Python, an in-browser playground
   via Pyodide and 16 solved LeetCode problems.
 - Portfolio Insight Copilot: a static fintech AI demo with a portfolio builder,
   broad U.S. listed ticker search, simulation-backed estimates, benchmark

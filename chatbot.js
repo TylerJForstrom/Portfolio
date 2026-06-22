@@ -72,8 +72,8 @@
         "finance-tuned FinBERT sentiment, and clusters themes with embeddings + HDBSCAN. " +
         "The dashboard ranks trending tickers by volume, velocity, and breakout score, " +
         "flags unusual spikes, and overlays social buzz on real price data with a lead/lag " +
-        "correlation readout — does chatter predict the move or chase it? It runs free: " +
-        "GitHub Actions cron + Supabase + Netlify. " +
+        "correlation readout that asks whether chatter predicts the move or chases it. It runs " +
+        "free on GitHub Actions cron, Supabase, and Netlify. " +
         ext(L.pulseDemo, "Live demo") + " · " + ext(L.pulseRepo, "Code") + ".",
     },
     {
@@ -115,9 +115,9 @@
         "layer with Deflated Sharpe Ratio, walk-forward testing, and realistic costs to check " +
         "whether strategies actually had edge. Most directional strategies did not hold up, which " +
         "was the honest result; volatility forecasting was the useful signal. The simulator itself " +
-        "is audited with controlled whale-order experiments against the square-root impact law — " +
-        "failures get published and drive mechanism fixes, never quiet re-tuning. Pure Python, " +
-        "~390 tests. " +
+        "is audited with controlled whale-order experiments against the square-root impact law, " +
+        "and failures get published and drive mechanism fixes instead of quiet re-tuning. It's pure " +
+        "Python, with around 390 tests. " +
         ext(L.demo, "Live demo") + " · " + ext(L.repo, "Code") + ".",
     },
     {
@@ -156,12 +156,12 @@
         "constant folding", "superinstructions", "fuzzing", "fuzzer"],
       answer:
         "Tyler designed and built <strong>Plain</strong>, a programming language that reads " +
-        "like English — tokenizer, parser, optimizing bytecode compiler, and a stack-based " +
-        "virtual machine, all written from scratch in pure Python. A peephole optimizer " +
-        "folds constants and fuses hot instruction pairs, so programs run up to ~4.8x " +
-        "faster than the original tree-walking interpreter (still there behind " +
+        "like English. It has a tokenizer, parser, optimizing bytecode compiler, and a " +
+        "stack-based virtual machine, all written from scratch in pure Python. A peephole " +
+        "optimizer folds constants and fuses hot instruction pairs, so programs run up to " +
+        "about 4.8x faster than the original tree-walking interpreter (still there behind " +
         "--engine=ast). Every push runs a differential suite plus hundreds of fuzzed random " +
-        "programs in CI to prove both engines produce identical output — friendly " +
+        "programs in CI to prove both engines produce identical output, friendly " +
         "line-numbered errors included. The demo site runs the real compiler in your " +
         "browser, with a <em>visual step-debugger</em> (watch variables and the call stack " +
         "change line by line), a Show-bytecode view, practice problems that stay pinned " +
@@ -178,13 +178,13 @@
         "systems programming", "built a database", "own database"],
       answer:
         "Tyler built <strong>GlassDB</strong>, a crash-safe SQL database engine written " +
-        "from scratch in Rust — pager with a buffer pool, write-ahead log, B+tree, SQL " +
-        "parser, and a query planner that explains its choices — with zero dependencies " +
-        "and no unsafe code. The demo runs the real engine in your browser via " +
+        "from scratch in Rust. It has a pager with a buffer pool, a write-ahead log, a " +
+        "B+tree, a SQL parser, and a query planner that explains its choices, all with zero " +
+        "dependencies and no unsafe code. The demo runs the real engine in your browser via " +
         "WebAssembly and visualizes every page read, every WAL write, and the B+tree " +
         "shape as queries execute, so you can watch a primary-key lookup touch 2 pages " +
         "while a full scan walks them all. Testing is the headline: differential " +
-        "fuzzing against Rust's BTreeMap as an oracle, plus crash injection — a " +
+        "fuzzing against Rust's BTreeMap as an oracle, plus crash injection where a " +
         "simulated disk cuts power at every single disk operation, and the suite " +
         "proves committed transactions always survive and unfinished ones vanish. " +
         ext(L.glassDemo, "Live demo") + " · " + ext(L.glassRepo, "Code") + ".",
@@ -198,13 +198,13 @@
       answer:
         "Tyler built the <strong>Mathematical Solver</strong>, a from-scratch math & stats " +
         "engine in plain JavaScript with zero libraries doing the math. You type a question " +
-        "the way you'd actually ask it — \"what is the probability of 3 heads in 10 coin " +
-        "flips\" or \"does the sum of 1/n^2 converge\" — and a natural-language parser maps " +
+        "the way you'd actually ask it, like \"what is the probability of 3 heads in 10 coin " +
+        "flips\" or \"does the sum of 1/n^2 converge\", and a natural-language parser maps " +
         "it to the right kind of problem, then routes it to the matching engine. It spans " +
         "algebra, calculus, linear algebra, graphing, numerical methods, probability, " +
         "statistics, and time series, and every answer shows step-by-step work, a table of " +
-        "artifacts, and a graph or expression tree when it helps. Everything is hand-written " +
-        "— Newton's method, Holt exponential smoothing, chi-square goodness-of-fit — and " +
+        "artifacts, and a graph or expression tree when it helps. Everything is hand-written, " +
+        "from Newton's method and Holt exponential smoothing to chi-square goodness-of-fit, and " +
         "200+ regression tests keep it honest as the engine grows. " +
         ext(L.mathDemo, "Live demo") + " · " + ext(L.mathRepo, "Code") + ".",
       chips: ["Tell me about GlassDB", "Tell me about the Plain language", "What tech does he use?"],
@@ -320,13 +320,13 @@
     {
       keywords: ["help", "options", "suggestions", "topics", "menu", "what can", "ask you"],
       answer:
-        "I can tell you about Tyler's background, his projects (TickerPulse — a social " +
-        "sentiment & trend radar for stocks, the NYC Real Estate Map, " +
-        "Plain — his own programming language, GlassDB — a from-scratch SQL database " +
-        "engine in Rust, the Mathematical Solver — a from-scratch math & stats engine, " +
-        "BanditFeed, an AI Portfolio Insight Copilot " +
-        "with portfolio building and simulation-backed estimates, an agent-based stock " +
-        "market simulator, Photon Forge, and the Ripple puzzle game), the tech he uses, " +
+        "I can tell you about Tyler's background, his projects (TickerPulse, a social " +
+        "sentiment & trend radar for stocks; the NYC Real Estate Map; " +
+        "Plain, his own programming language; GlassDB, a from-scratch SQL database " +
+        "engine in Rust; the Mathematical Solver, a from-scratch math & stats engine; " +
+        "BanditFeed; an AI Portfolio Insight Copilot " +
+        "with portfolio building and simulation-backed estimates; an agent-based stock " +
+        "market simulator; Photon Forge; and the Ripple puzzle game), the tech he uses, " +
         "what he's looking for, or how to contact him. What would you like to know?",
     },
     {
@@ -340,7 +340,7 @@
   ];
 
   const FALLBACK =
-    "Hmm, that one's outside what I know — I'm a small bot that sticks to the facts " +
+    "Hmm, that one's outside what I know. I'm a small bot that sticks to the facts " +
     "I was given rather than guessing. I can tell you about Tyler's projects, his " +
     "skills, what he's looking for, or how to reach him.";
 
@@ -421,7 +421,7 @@
     if (!greeted) {
       greeted = true;
       addMessage(
-        "Hi! 👋 I can answer questions about Tyler and his work — what he's built, " +
+        "Hi! 👋 I can answer questions about Tyler and his work: what he's built, " +
           "the tech he uses, or how to get in touch. Ask away, or tap a suggestion.",
         "bot",
         false,

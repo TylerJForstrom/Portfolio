@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tyler Forstrom — Résumé</title>
+    <style>
+      @page {
+        size: letter;
+        margin: 0.5in 0.6in;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+        color: #111;
+        font-size: 10.2px;
+        line-height: 1.32;
+      }
+      .name {
+        text-align: center;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        margin: 0 0 3px;
+      }
+      .contact {
+        text-align: center;
+        font-size: 9.4px;
+        color: #333;
+        margin: 0;
+      }
+      .contact a {
+        color: #333;
+        text-decoration: none;
+      }
+      .section {
+        font-weight: 700;
+        font-size: 10.6px;
+        letter-spacing: 0.4px;
+        margin: 13px 0 0;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #111;
+      }
+      .entry {
+        margin-top: 7px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+      .row .title {
+        font-weight: 700;
+      }
+      .row .meta {
+        font-style: italic;
+        white-space: nowrap;
+        color: #222;
+      }
+      .subline {
+        font-style: italic;
+        color: #333;
+        margin: 1px 0 0;
+      }
+      .subline a {
+        color: #333;
+        text-decoration: none;
+      }
+      ul {
+        margin: 2px 0 0;
+        padding-left: 16px;
+      }
+      li {
+        margin: 1.5px 0;
+      }
+      .info p {
+        margin: 3px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="name">Tyler Forstrom</h1>
+    <p class="contact">
+      2 Tower Road, East Hartford, CT 06108 | (475) 239-9648 | tylerjamesforstrom@gmail.com
+    </p>
+    <p class="contact">
+      github.com/TylerJForstrom | linkedin.com/in/tyler-forstrom-b78730226
+    </p>
+
+    <div class="section">EDUCATION</div>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Cornell University, College of Engineering</span>
+        <span class="meta">Ithaca, NY</span>
+      </div>
+      <div class="row">
+        <span>Bachelor of Science in Computer Science, Minor in Business</span>
+        <span class="meta">Expected December 2026</span>
+      </div>
+    </div>
+
+    <div class="section">EXPERIENCE</div>
+
+    <div class="entry">
+      <div class="row">
+        <span class="title">App Developer Intern, Kahua (Construction Software Company)</span>
+        <span class="meta">Internship</span>
+      </div>
+      <ul>
+        <li>Developed web applications to support construction project workflows and improve data accessibility.</li>
+        <li>Built and integrated full-stack features with a focus on performance and user-friendly design.</li>
+        <li>Collaborated on tools that streamline communication and organization for project teams.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row">
+        <span class="title">Adaptive Ecosystem Lab — Multi-Agent Reinforcement Learning (PyTorch)</span>
+        <span class="meta">Personal Project | 2026</span>
+      </div>
+      <div class="subline">github.com/TylerJForstrom/EvolutionSim</div>
+      <ul>
+        <li>Built a vectorized 2D ecosystem and a multi-agent reinforcement learning trainer from scratch in NumPy and PyTorch, where five species (herbivores, predators, decomposers, pollinators, engineers) each learn their own policy network concurrently from reward alone.</li>
+        <li>Implemented Proximal Policy Optimization (PPO) from scratch and diagnosed three training-collapse failure modes (policy mode-collapse, food-web NaNs, ~70% wasted compute).</li>
+        <li>Fixed instability with a PPO ratio-overflow guard, a global carrying-capacity cap, and an adaptive entropy controller, taking runs from always-collapsing to reliably stable.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row">
+        <span class="title">BanditFeed — Contextual-Bandit Recommendation System (FastAPI)</span>
+        <span class="meta">Personal Project | 2025-2026</span>
+      </div>
+      <div class="subline">github.com/TylerJForstrom/BanditFeed</div>
+      <ul>
+        <li>Built an interpretable article recommender that ranks real RSS content with contextual bandits, balancing explore-vs-exploit and updating its beliefs online from each click or skip.</li>
+        <li>Surfaced a per-article explanation of why each item was ranked, making the model's reward estimates and uncertainty visible in real time.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row">
+        <span class="title">Agent-Based Stock Market Simulator &amp; Strategy Validation Pipeline</span>
+        <span class="meta">Personal Project | 2025-2026</span>
+      </div>
+      <div class="subline">github.com/TylerJForstrom/Stock-Market-Sim</div>
+      <ul>
+        <li>Built an agent-based limit-order-book market simulator in pure Python where prices emerge from competing trading agents (market makers, momentum, mean-reversion, and institutional order flow).</li>
+        <li>Designed a statistical validation pipeline (Deflated Sharpe Ratio with multiple-testing correction, walk-forward out-of-sample testing, and realistic trading costs) to test strategies honestly and avoid false positives.</li>
+        <li>Found no reliable directional edge across eight strategy families, and built a volatility forecaster competitive with industry-standard models (HAR-RV, EWMA) out-of-sample on equities and crypto.</li>
+        <li>Wrote ~350 automated tests with continuous integration and a tamper-evident research log; implemented all statistics from scratch with no external numerical libraries.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row">
+        <span class="title">Sketch-to-Image Enhancement Using Deep Learning (PyTorch)</span>
+        <span class="meta">Personal Project | Hartford, CT</span>
+      </div>
+      <ul>
+        <li>Built a sketch-to-image generation model using custom U-Net architectures and GAN training (PatchGAN discriminator) in PyTorch.</li>
+        <li>Implemented perceptual, edge, and L1 reconstruction losses to improve realism and stability, with a multi-stage training curriculum (warmup, then GAN, then deep-model refinement).</li>
+        <li>Developed a Streamlit app enabling users to draw or upload sketches and generate colorized outputs in real time.</li>
+      </ul>
+    </div>
+
+    <div class="section">ACTIVITIES</div>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Investments in Technology @ Cornell</span>
+        <span class="meta">Ithaca, NY | Jan 2023</span>
+      </div>
+      <div class="subline">Founder, Treasurer &amp; Portfolio Manager</div>
+      <ul>
+        <li>Co-founded a club focused on teaching students about investing in the tech industry and managing a real investment portfolio.</li>
+        <li>Collaborated with a team to develop educational materials, organize meetings, and lead discussions on investment strategies, market trends, and risk management.</li>
+      </ul>
+    </div>
+
+    <div class="section">ADDITIONAL INFORMATION</div>
+    <div class="entry info">
+      <p>
+        <strong>Technical Skills:</strong> Python, Java, C, OCaml, SQL · PyTorch, TensorFlow, NumPy · Reinforcement learning (PPO, multi-agent), GANs, contextual bandits, NLP sentiment, applied statistics
+      </p>
+      <p><strong>Interests:</strong> Martial Arts, Gaming, Investing, Weightlifting, Golf</p>
+    </div>
+  </body>
+</html>

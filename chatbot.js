@@ -39,7 +39,7 @@
     glassRepo: "https://github.com/TylerJForstrom/Storage",
     mathDemo: "https://mathematical-solver.netlify.app",
     mathRepo: "https://github.com/TylerJForstrom/Mathematical_Solver",
-    magpieDemo: "https://magpie.netlify.app",
+    magpieDemo: "https://magpieproject.netlify.app",
     magpieRepo: "https://github.com/TylerJForstrom/Magpie",
   };
   const ext = (href, text) =>

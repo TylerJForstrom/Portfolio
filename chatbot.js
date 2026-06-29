@@ -39,6 +39,8 @@
     glassRepo: "https://github.com/TylerJForstrom/Storage",
     mathDemo: "https://mathematical-solver.netlify.app",
     mathRepo: "https://github.com/TylerJForstrom/Mathematical_Solver",
+    magpieDemo: "https://magpie.netlify.app",
+    magpieRepo: "https://github.com/TylerJForstrom/Magpie",
   };
   const ext = (href, text) =>
     `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
@@ -49,6 +51,7 @@
     "Tell me about the NYC real estate map",
     "Tell me about the Plain language",
     "Tell me about GlassDB",
+    "Tell me about Magpie",
     "Tell me about the Mathematical Solver",
     "Tell me about BanditFeed",
     "Tell me about Photon Forge",
@@ -190,6 +193,26 @@
         ext(L.glassDemo, "Live demo") + " · " + ext(L.glassRepo, "Code") + ".",
     },
     {
+      keywords: ["magpie", "thread", "threads", "thread pool", "threadpool",
+        "work stealing", "work-stealing", "concurrency", "concurrent", "parallel",
+        "parallelism", "pthread", "pthreads", "deque", "mutex", "race condition",
+        "race conditions", "lock", "locks", "scheduler", "multithreading",
+        "multithreaded", "mandelbrot", "amdahl", "thread pool in c"],
+      answer:
+        "Tyler built <strong>Magpie</strong>, a work-stealing thread pool written " +
+        "from scratch in C. Each worker thread owns its own queue, and when one runs " +
+        "out of work it steals a task off the back of a busy thread's pile, so nobody " +
+        "sits idle. The demo renders a Mandelbrot fractal one tile per task, the slow " +
+        "interior and fast empty space make the work deliberately uneven, which is " +
+        "when stealing pays off, and the browser replays a real recorded run: the " +
+        "image paints in tinted by the thread that drew each tile, a per-thread " +
+        "timeline shows tasks and steal arrows, and a speedup chart shows the gains " +
+        "flattening as Amdahl's law kicks in. It's pthreads with zero dependencies, " +
+        "and the tests prove every task runs exactly once under heavy stealing, with " +
+        "CI on Linux and macOS under AddressSanitizer and UndefinedBehaviorSanitizer. " +
+        ext(L.magpieDemo, "Live demo") + " · " + ext(L.magpieRepo, "Code") + ".",
+    },
+    {
       keywords: ["math", "maths", "mathematical", "math solver", "mathematical solver",
         "solver", "calculus", "algebra", "statistics", "stats", "derivative",
         "integral", "equation", "equations", "linear algebra", "matrix", "matrices",
@@ -243,7 +266,9 @@
         "like English (optimizing bytecode compiler + stack VM built from scratch, with " +
         "an in-browser playground and step-debugger); " +
         "<strong>GlassDB</strong>, a crash-safe SQL database engine built from scratch " +
-        "in Rust that runs visibly in the browser via WebAssembly; the " +
+        "in Rust that runs visibly in the browser via WebAssembly; " +
+        "<strong>Magpie</strong>, a work-stealing thread pool in C that lets you watch " +
+        "idle threads steal work as a fractal renders in parallel; the " +
         "<strong>Mathematical Solver</strong>, a from-scratch math & stats engine that " +
         "turns plain-English questions into the right problem type and shows its work; " +
         "<strong>BanditFeed</strong>, a real-article recommendation demo using contextual " +
@@ -266,7 +291,7 @@
         "<strong>FastAPI</strong>, <strong>PostgreSQL/PostGIS</strong>, " +
         "<strong>Three.js/WebGL</strong>, and Git. He's comfortable across ML, " +
         "recommendation systems, data engineering and geospatial work, simulation, " +
-        "systems programming, computer graphics, and web.",
+        "systems programming, concurrency, computer graphics, and web.",
     },
     {
       keywords: ["looking", "hiring", "hire", "job", "jobs", "role", "roles",
@@ -323,7 +348,8 @@
         "I can tell you about Tyler's background, his projects (TickerPulse, a social " +
         "sentiment & trend radar for stocks; the NYC Real Estate Map; " +
         "Plain, his own programming language; GlassDB, a from-scratch SQL database " +
-        "engine in Rust; the Mathematical Solver, a from-scratch math & stats engine; " +
+        "engine in Rust; Magpie, a work-stealing thread pool in C; " +
+        "the Mathematical Solver, a from-scratch math & stats engine; " +
         "BanditFeed; an AI Portfolio Insight Copilot " +
         "with portfolio building and simulation-backed estimates; an agent-based stock " +
         "market simulator; Photon Forge; and the Ripple puzzle game), the tech he uses, " +

@@ -368,6 +368,40 @@
               </div>
             </article>
 
+            <!-- Magpie -->
+            <article class="project reveal" data-topics="languages">
+              <h3>Magpie: watch threads steal work from each other</h3>
+              <p class="project-blurb">
+                Threads are normally invisible, so I built a work-stealing thread
+                pool in C that you can actually watch. Eight real OS threads each
+                own a queue of work, and when one runs dry it steals a task off
+                the back of a busy thread's pile instead of sitting idle. To give
+                it lopsided work to chew on, the demo renders a Mandelbrot fractal
+                one tile at a time: the dark interior is slow and the empty space
+                is fast, which is exactly when stealing earns its keep. The
+                browser demo replays a real recorded run, so you watch the image
+                paint in tile by tile, tinted by whichever thread drew it, while a
+                per-thread timeline shows the moment one thread steals from
+                another and a speedup chart shows the gains flattening out as the
+                work runs past the cores. The part I cared about most is that it
+                holds up: the tests prove every task runs exactly once even under
+                heavy stealing, and CI runs the whole suite on Linux and macOS
+                under AddressSanitizer and UndefinedBehaviorSanitizer.
+              </p>
+              <ul class="tags">
+                <li>C</li>
+                <li>Systems programming</li>
+                <li>Concurrency</li>
+                <li>Work-stealing</li>
+                <li>pthreads</li>
+                <li>Zero dependencies</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://magpie.netlify.app" target="_blank" rel="noopener">Live demo →</a>
+                <a href="https://github.com/TylerJForstrom/Magpie" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </article>
+
             <!-- Mathematical Solver -->
             <article class="project reveal" data-topics="languages data">
               <h3>Mathematical Solver: ask any math question in plain English</h3>
